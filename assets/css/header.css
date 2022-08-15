@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 100px;
+  color: var(--c2);
+}
+
+.header__nav {
+  margin: auto 0;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header__nav a {
+  transition: 0.3s;
+}
+
+.header__nav a:hover {
+  color: var(--c3);
+}
