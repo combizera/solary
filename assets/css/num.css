@@ -5,4 +5,38 @@
 .num__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-family: "Saira", sans-serif;
+  padding: 2rem 100px;
+}
+
+.num__grid img {
+  transform: scale(0.8);
+}
+
+.num__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.num__dest {
+  font-weight: 700;
+  font-size: 3rem;
+
+  color: var(--bg);
+  grid-column: 2;
+}
+
+.num__p {
+  font-weight: 300;
+  line-height: 120%;
+  color: var(--c1);
+  grid-column: 2;
+}
+
+.num__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  gap: 0.5rem;
 }

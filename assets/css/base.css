@@ -88,3 +88,23 @@ img {
 .borda {
   border-radius: 16px;
 }
+
+.sec__tit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  font-family: "Saira", sans-serif;
+}
+
+.sec__tit h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 70px;
+
+  color: var(--c3);
+}
+
+.sec__tit p {
+  font-weight: 300;
+  color: var(--c1);
+}

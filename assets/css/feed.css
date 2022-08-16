@@ -1,0 +1,45 @@
+.feed {
+  padding: 4rem 100px;
+}
+
+.feed__img {
+  margin-left: -2rem;
+}
+
+.feed__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Saira", sans-serif;
+  gap: 2rem;
+  color: var(--c3);
+}
+
+.feed__tit {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 70px;
+}
+
+.feed__depo {
+  color: var(--c2);
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+
+.feed__depo span {
+  position: absolute;
+  font-style: italic;
+  margin-left: -4.5rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 100px;
+  color: var(--c3);
+  opacity: 0.2;
+}
+
+.feed__pessoa {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  text-align: right;
+}

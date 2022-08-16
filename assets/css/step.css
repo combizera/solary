@@ -2,28 +2,6 @@
   padding: 80px 100px;
 }
 
-.step__tit {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: "Saira", sans-serif;
-}
-
-.step__tit h2 {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 70px;
-
-  color: var(--c3);
-}
-
-.step__tit p {
-  font-weight: 300;
-  line-height: 40px;
-
-  color: var(--c1);
-}
-
 .step_grid {
   display: grid;
   grid-template-columns: 40% 60%;
