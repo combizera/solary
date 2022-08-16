@@ -1,0 +1,8 @@
+.num {
+  background-color: var(--c3);
+}
+
+.num__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

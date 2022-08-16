@@ -1,0 +1,70 @@
+.step {
+  padding: 80px 100px;
+}
+
+.step__tit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Saira", sans-serif;
+}
+
+.step__tit h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 70px;
+
+  color: var(--c3);
+}
+
+.step__tit p {
+  font-weight: 300;
+  line-height: 40px;
+
+  color: var(--c1);
+}
+
+.step_grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 2rem 0;
+}
+
+.step__steps h4 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 125%;
+  color: var(--c3);
+}
+
+.step__steps p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 130%;
+  color: var(--c2);
+  padding: 0.5rem 0;
+}
+
+.step__steps li {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-bottom: 1rem;
+}
+
+.step__txt {
+  margin: 0 1rem;
+}
+
+.step__steps a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-decoration-line: underline;
+  color: var(--c2);
+  transition: 0.3s;
+}
+
+.step__steps a:hover {
+  color: var(--c3);
+}

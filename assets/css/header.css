@@ -3,6 +3,7 @@ header {
   justify-content: space-between;
   padding: 0.5rem 100px;
   color: var(--c2);
+  font-family: "Mukta", sans-serif;
 }
 
 .header__nav {

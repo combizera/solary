@@ -1,0 +1,94 @@
+.meto {
+  background-color: var(--c0);
+  padding: 80px 100px;
+}
+
+.meto h2 {
+  font-family: "Saira", sans-serif;
+  font-size: 8rem;
+  line-height: 10rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+
+  color: var(--c3);
+
+  opacity: 0.1;
+  margin-bottom: -3rem;
+}
+
+.meto__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.meto__grid li {
+  background: #ebe7e1;
+  box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.11),
+    0px 2.92013px 29.2013px rgba(0, 0, 0, 0.075898),
+    0px 1.41767px 14.1767px rgba(0, 0, 0, 0.061192),
+    0px 0.694968px 6.94968px rgba(0, 0, 0, 0.048808),
+    0px 0.274791px 2.74791px rgba(0, 0, 0, 0.034102);
+  border-radius: 16px;
+  padding: 1rem 1rem 1.5rem 1.5rem;
+  position: relative;
+}
+
+.meto__num {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  background: linear-gradient(
+    360deg,
+    rgba(127, 127, 127, 0) -44.37%,
+    rgba(180, 180, 180, 0) -44.36%,
+    rgba(172, 172, 172, 0.35) 24.05%,
+    rgba(164, 161, 161, 0.89703) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.meto__icon {
+  background-color: var(--c3);
+  position: absolute;
+  padding: 1rem;
+  right: 0;
+  transform: translateX(20%) translateY(-80%);
+  box-shadow: -2px 3px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+.meto__txt {
+  padding-top: 1rem;
+}
+
+.meto__txt h3 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+
+  background: linear-gradient(90deg, #7f62f4 0%, #f48162 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  opacity: 0.6;
+}
+
+.meto__txt p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+  /* or 130% */
+
+  color: var(--c1);
+}

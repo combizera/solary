@@ -4,10 +4,11 @@ Site que mostra alguns dos meus principais projetos pessoais, assim como também
 
 ## Cores
 
---bg: #EBE7E1;
---c0: #FAF8F5;
---c1: #707070;
---c2: #404040;
+--bg: #ebe7e1;
+--c0: #faf8f5;
+--c1: #b0b0b0;
+--c2: #707070;
+--c3: #404040;
 
 ## Fontes
 

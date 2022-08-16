@@ -1,0 +1,45 @@
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 100px;
+  font-family: "Saira", sans-serif;
+  color: var(--c2);
+  font-weight: 300;
+}
+
+.hero__det {
+  padding: 4px 1rem;
+  background-color: var(--c0);
+  display: inline-flex !important;
+  border-radius: 16px;
+  font-family: "Mukta", sans-serif;
+}
+
+.hero__tit {
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: var(--c3);
+}
+
+.hero__tit span {
+  font-weight: 500;
+}
+
+.hero__vant {
+  padding: 2rem 0px;
+}
+
+.hero__vant li {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero__vant li:first-child {
+  margin-top: 0;
+}
+
+.hero__btn a:last-child {
+  margin-left: 1rem;
+}
