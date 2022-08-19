@@ -1,7 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 100px;
+  padding: 0.5rem 80px;
   color: var(--c2);
   font-family: "Mukta", sans-serif;
 }
@@ -12,13 +12,61 @@ header {
 
 .header__nav ul {
   display: flex;
-  gap: 20px;
+  gap: var(--gap3);
 }
 
 .header__nav a {
   transition: 0.3s;
+  position: relative;
 }
 
-.header__nav a:hover {
-  color: var(--c3);
+.header__nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: var(--c2);
+  margin-top: 4px;
+  transition: 0.4s;
+}
+
+.header__nav a:hover:after {
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  header {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.5rem 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap2);
+  }
+  .header__nav {
+    margin: auto 0;
+  }
+
+  .header__nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap2);
+    justify-content: center;
+  }
+
+  .header__nav a {
+    background-color: var(--c0);
+    border-radius: 16px;
+    padding: var(--gap2);
+    display: inline-block;
+  }
+
+  .header__nav a:hover {
+    background-color: var(--c1);
+  }
+
+  .header__nav a::after {
+    display: none;
+  }
 }

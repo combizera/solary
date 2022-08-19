@@ -1,18 +1,17 @@
 .hero__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 80px 100px;
   font-family: "Saira", sans-serif;
   color: var(--c2);
   font-weight: 300;
 }
 
 .hero__det {
-  padding: 4px 1rem;
+  padding: 0.5rem 1rem;
   background-color: var(--c0);
   display: inline-flex !important;
-  border-radius: 16px;
   font-family: "Mukta", sans-serif;
+  font-size: 14px;
 }
 
 .hero__tit {
@@ -26,20 +25,32 @@
   font-weight: 500;
 }
 
-.hero__vant {
-  padding: 2rem 0px;
-}
-
-.hero__vant li {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.hero__vant li:first-child {
-  margin-top: 0;
+.hero__btn {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero__btn a:last-child {
-  margin-left: 1rem;
+  margin-left: var(--gap3);
+}
+
+@media (max-width: 800px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .hero__tit {
+    font-size: 2.5rem;
+  }
+
+  .hero__btn {
+    margin-bottom: var(--gap4);
+    gap: var(--gap2);
+  }
+
+  .hero__btn a:last-child {
+    margin-left: var(--gap0);
+  }
 }

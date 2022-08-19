@@ -1,31 +1,21 @@
 .meto {
   background-color: var(--c0);
-  padding: 80px 100px;
 }
 
+/* Não sei se vou usar o texto puro ou o svg */
 .meto h2 {
-  font-family: "Saira", sans-serif;
-  font-size: 8rem;
-  line-height: 10rem;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-
-  color: var(--c3);
-
-  opacity: 0.1;
-  margin-bottom: -3rem;
+  display: none;
 }
 
 .meto__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  margin-top: 2.5rem;
 }
 
 .meto__grid li {
-  background: #ebe7e1;
+  background: var(--bg);
   box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.11),
     0px 2.92013px 29.2013px rgba(0, 0, 0, 0.075898),
     0px 1.41767px 14.1767px rgba(0, 0, 0, 0.061192),
@@ -63,6 +53,10 @@
   box-shadow: -2px 3px 20px 4px rgba(0, 0, 0, 0.25);
 }
 
+.meto__icon img {
+  max-width: 60px;
+}
+
 .meto__txt {
   padding-top: 1rem;
 }
@@ -91,4 +85,73 @@
   /* or 130% */
 
   color: var(--c1);
+}
+
+.meto__bg {
+  background: url("./../img/icon/texto.svg") no-repeat top 20px left 0px;
+  background-size: contain;
+  padding: 80px;
+}
+
+@media (max-width: 800px) {
+  .meto {
+    padding: 20px;
+    position: relative;
+  }
+
+  .meto__bg {
+    background: none;
+    padding: 0px;
+  }
+
+  .meto h2 {
+    font-family: "Saira", sans-serif;
+    font-size: 6rem;
+    letter-spacing: -5px;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    color: var(--c3);
+
+    opacity: 0.1;
+    display: block;
+    word-break: break-all;
+    max-width: 6ch;
+    margin-bottom: -2rem;
+    text-align: center;
+  }
+
+  .meto__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .meto__grid li {
+    padding: 1rem;
+  }
+
+  .meto__num {
+    font-size: 3rem;
+    line-height: 100%;
+  }
+
+  .meto__icon {
+    position: absolute;
+    transform: translateX(20%) translateY(-40%);
+  }
+
+  .meto__icon img {
+    max-width: 50px;
+  }
+
+  .meto__txt {
+    padding-top: 0.5rem;
+  }
+
+  .meto__txt h3 {
+    padding-right: 3rem;
+
+    opacity: 0.6;
+  }
 }

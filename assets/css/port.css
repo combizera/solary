@@ -1,5 +1,5 @@
 .port {
-  padding: 4rem 100px;
+  padding: 80px;
 }
 
 .port__itens {
@@ -38,4 +38,10 @@
 .port__item5 {
   grid-column: 6 / 9;
   grid-row: 2;
+}
+@media (max-width: 800px) {
+  .port {
+    background-color: var(--c3);
+    display: none;
+  }
 }

@@ -15,29 +15,29 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <div class="logo"><img src="./assets/img/icon/log.svg" alt=""></div>
         <div class="header__nav">
             <nav>
                 <ul>
                     <li>
                         <a href="#">
-                            <p>metodologia</p>
+                            metodologia
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p>passo a passo</p>
+                            passo a passo
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p>portfólio</p>
+                            portfólio
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p>depoimentos</p>
+                            depoimentos
                         </a>
                     </li>
                 </ul>
@@ -46,83 +46,107 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero__grid">
-                <div class="hero__txt">
-                    <div class="hero__det">
-                        <p>Especialistas em sites</p>
+        <div class="relative">
+            <div class="bg__hero">
+                <svg class="svg-hero" viewBox="0 0 1920 553" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="herosvg">
+                        <path id="bg-heroline1" opacity="0.5" d="M1955 459.605C1473.68 563.71 1207.97 598.019 768.439 459.605C531.127 384.871 338.703 391.468 -3.40939e-05 459.605" stroke="#B0B0B0" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 10" />
+                        <path id="bg-heroline2" opacity="0.2" d="M-37.6821 397.764C304.336 250.822 497.887 212.653 848.374 248.574C1369.38 301.969 1606.2 229.87 1925.46 67.2181" stroke="#B0B0B0" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 10" />
+                        <rect id="quad-hero2" opacity="0.5" x="866.397" y="309.19" width="92.6193" height="92.6193" rx="10" transform="rotate(-144.493 866.397 309.19)" fill="url(#paint0_linear_540_564)" />
+                        <rect id="quad-hero1" opacity="0.5" x="1677" y="149.595" width="96.0073" height="96.0073" rx="10" transform="rotate(-46.4597 1677 149.595)" fill="url(#paint1_linear_540_564)" />
+                        <circle id="bola-hero1" cx="689" cy="436" r="30" fill="url(#paint2_linear_540_564)" />
+                        <circle id="bola-hero2" cx="66.6396" cy="353.64" r="15" transform="rotate(78.7425 66.6396 353.64)" fill="url(#paint3_linear_540_564)" />
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_540_564" x1="866.397" y1="309.19" x2="959.016" y2="401.809" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9" stop-opacity="0.3" />
+                            <stop offset="1" stop-color="#8D8D8D" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_540_564" x1="1677" y1="149.595" x2="1773.01" y2="245.602" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D9D9D9" stop-opacity="0" />
+                            <stop offset="1" stop-color="#8D8D8D" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_540_564" x1="659" y1="435.032" x2="719" y2="435.032" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#A48FF5" />
+                            <stop offset="0.581178" stop-color="#F3A38D" stop-opacity="0.51" />
+                            <stop offset="1" stop-color="#F3A38D" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_540_564" x1="51.6396" y1="353.156" x2="81.6396" y2="353.156" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#A48FF5" />
+                            <stop offset="0.581178" stop-color="#F3A38D" stop-opacity="0.51" />
+                            <stop offset="1" stop-color="#F3A38D" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+            </div>
+
+            <section class="hero container">
+                <div class="hero__grid p-7">
+                    <div class="hero__txt">
+                        <div class="hero__det borda">
+                            <p>Especialistas em sites</p>
+                        </div>
+                        <div class="hero__tit">
+                            <h1>Mais do que um site. Sua empresa merece <span>excelência</span></h1>
+                        </div>
+                        <div class="hero__btn mT-5">
+                            <a class="btn__pri borda" href="">veja alguns projetos</a>
+                            <a class="btn__sec borda" href="">faça um orçamento</a>
+                        </div>
                     </div>
-                    <div class="hero__tit">
-                        <h1>Mais do que um site. Sua empresa merece <span>excelência</span></h1>
+                    <div class="hero__img">
+                        <img src="./assets/img/icon/img.svg" alt="">
                     </div>
-                    <div class="hero__vant">
-                        <ul>
+                </div>
+            </section>
+        </div>
+
+        <article class="meto">
+            <div class="meto__bg">
+                <div class="container">
+                    <h2 class="meto__tit">metodologia</h2>
+                    <div>
+                        <ul class="meto__grid">
                             <li>
-                                <img src="./assets/img/icon/check.svg" alt="Ícone de vantagem">
-                                <p>Sites que funcionam no celular e computador</p>
+                                <p class="meto__num">01</p>
+                                <div class="meto__icon borda"><img src="./assets/img/icon/meto1.svg" alt="Ícone de"></div>
+                                <div class="meto__txt">
+                                    <h3>Briefing</h3>
+                                    <p>Reunião para entender quais os problemas do cliente, com base nessas informações, começar a elaborar soluções para resolver o problema.</p>
+                                </div>
                             </li>
                             <li>
-                                <img src="./assets/img/icon/check.svg" alt="Ícone de vantagem">
-                                <p>Sites que funcionam no celular e computador</p>
+                                <p class="meto__num">02</p>
+                                <div class="meto__icon borda"><img src="./assets/img/icon/meto2.svg" alt="Ícone de"></div>
+                                <div class="meto__txt">
+                                    <h3>Planejamento</h3>
+                                    <p>Definir plataforma de trabalho. Wireframe de baixa fidelidade. Estruturar os primeiros layouts do projeto. Quando o cliente aprovar seguimos.</p>
+                                </div>
                             </li>
                             <li>
-                                <img src="./assets/img/icon/check.svg" alt="Ícone de vantagem">
-                                <p>Sites que funcionam no celular e computador</p>
+                                <p class="meto__num">03</p>
+                                <div class="meto__icon borda"><img src="./assets/img/icon/meto3.svg" alt="Ícone de"></div>
+                                <div class="meto__txt">
+                                    <h3>Criação</h3>
+                                    <p>Após o OK, é hora de começar a codificar o layout produzido, dando vida ao site. Realizar polimentos finais. Correção de BUGs.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="meto__num">04</p>
+                                <div class="meto__icon borda"><img src="./assets/img/icon/meto4.svg" alt="Ícone de"></div>
+                                <div class="meto__txt">
+                                    <h3>Lançamento</h3>
+                                    <p>Tudo perfeito, é hora de lançar!Avise seu público sobre o novo site. Nosso trabalho não acaba aqui, seguimos monitorando o desempenho do site.</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="hero__btn">
-                        <a class="btn__pri" href="">veja alguns projetos</a>
-                        <a class="btn__sec" href="">faça um orçamento</a>
-                    </div>
                 </div>
-                <div class="hero__img">
-                    <img src="./assets/img/icon/img.svg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <article class="meto">
-            <h2 class="meto__tit">metodologia</h2>
-            <div>
-                <ul class="meto__grid">
-                    <li>
-                        <p class="meto__num">01</p>
-                        <div class="meto__icon borda"><img src="./assets/img/icon/meto1.svg" alt="Ícone de"></div>
-                        <div class="meto__txt">
-                            <h3>Briefing</h3>
-                            <p>Reunião para entender quais os problemas do cliente, com base nessas informações, começar a elaborar soluções para resolver o problema.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="meto__num">02</p>
-                        <div class="meto__icon borda"><img src="./assets/img/icon/meto2.svg" alt="Ícone de"></div>
-                        <div class="meto__txt">
-                            <h3>Planejamento</h3>
-                            <p>Definir plataforma de trabalho. Wireframe de baixa fidelidade. Estruturar os primeiros layouts do projeto. Quando o cliente aprovar seguimos.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="meto__num">03</p>
-                        <div class="meto__icon borda"><img src="./assets/img/icon/meto3.svg" alt="Ícone de"></div>
-                        <div class="meto__txt">
-                            <h3>Criação</h3>
-                            <p>Após o OK, é hora de começar a codificar o layout produzido, dando vida ao site. Realizar polimentos finais. Correção de BUGs.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="meto__num">04</p>
-                        <div class="meto__icon borda"><img src="./assets/img/icon/meto4.svg" alt="Ícone de"></div>
-                        <div class="meto__txt">
-                            <h3>Lançamento</h3>
-                            <p>Tudo perfeito, é hora de lançar!Avise seu público sobre o novo site. Nosso trabalho não acaba aqui, seguimos monitorando o desempenho do site.</p>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </article>
 
-        <section class="step">
+        <section class="step container">
             <div class="sec__tit">
                 <h2>Ainda está confuso?</h2>
                 <p>sem problemas, a gente desenha (=</p>
@@ -200,7 +224,7 @@
         </section>
 
         <article class="num">
-            <div class="num__grid">
+            <div class="num__grid container">
                 <div class="num__item">
                     <img src="./assets/img/icon/num1.svg" alt="">
                     <div class="num__txt">
@@ -226,31 +250,34 @@
         </article>
 
         <section class="port">
-            <div class="sec__tit">
-                <h2>Trabalhos Recentes</h2>
-                <p>Selecionamos alguns projetos que amamos desenvolver. Basta clicar na imagem e ver tooodo o processo, do briefing ao site no ar</p>
-            </div>
+            <div class="container">
+                <div class="sec__tit">
+                    <h2>Trabalhos Recentes</h2>
+                    <p>Selecionamos alguns projetos que amamos desenvolver. Basta clicar na imagem e ver tooodo o processo, do briefing ao site no ar</p>
+                </div>
 
-            <div class="port__itens">
-                <div class="port__item1">
-                    <img src="./assets/img/fake2.png" alt="">
-                </div>
-                <div class="port__item2">
-                    <img src="./assets/img/fake2.png" alt="">
-                </div>
-                <div class="port__item3">
-                    <img src="./assets/img/fake2.png" alt="">
-                </div>
-                <div class="port__item4">
-                    <img src="./assets/img/fake2.png" alt="">
-                </div>
-                <div class="port__item5">
-                    <img src="./assets/img/fake2.png" alt="">
+                <div class="port__itens">
+                    <div class="port__item1">
+                        <img src="./assets/img/fake2.png" alt="">
+                    </div>
+                    <div class="port__item2">
+                        <img src="./assets/img/fake2.png" alt="">
+                    </div>
+                    <div class="port__item3">
+                        <img src="./assets/img/fake2.png" alt="">
+                    </div>
+                    <div class="port__item4">
+                        <img src="./assets/img/fake2.png" alt="">
+                    </div>
+                    <div class="port__item5">
+                        <img src="./assets/img/fake2.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
+
         <section class="feed">
-            <div class="feed__grid">
+            <div class="feed__grid container">
                 <div class="feed__img"><img src="./assets/img/icon/avaliacao.svg" alt=""></div>
                 <div class="feed__txt">
                     <div class="feed__tit">O que dizem sobre nós</div>
@@ -261,6 +288,14 @@
         </section>
     </main>
 
+
+    <!-- Bib. GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bib. ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js" integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Meus Códigos JS -->
     <script src="script.js"></script>
 </body>
 

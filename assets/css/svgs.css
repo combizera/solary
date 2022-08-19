@@ -1,0 +1,28 @@
+.relative {
+  position: relative;
+}
+
+.bg__hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+  z-index: -1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-hero {
+}
+
+@media (max-width: 800px) {
+  .svg-hero {
+    transform: scale(1.8) rotate(30deg);
+  }
+}

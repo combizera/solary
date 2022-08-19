@@ -43,3 +43,10 @@
   line-height: 4rem;
   text-align: right;
 }
+
+@media (max-width: 800px) {
+  .feed {
+    background-color: var(--c3);
+    display: none;
+  }
+}
