@@ -5,8 +5,10 @@
 .port__itens {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 50% 50%;
   gap: 1.5rem;
+  height: 105vh;
+  margin-top: var(--gap4);
 }
 
 .port__itens div {

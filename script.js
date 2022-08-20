@@ -107,6 +107,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // depois do scroll
   gsap.registerPlugin(ScrollTrigger);
+  gsap.from(".meto__bg", {
+    duration: 2,
+    delay: 0.2,
+    x: -1000,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#metodologia ",
+    },
+  });
 
   gsap.from("#metodologia li", {
     duration: 1,
@@ -115,20 +125,102 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: { each: 0.3 },
     ease: "power3.out",
     scrollTrigger: {
-      trigger: "#metodologia li",
+      trigger: "#metodologia",
     },
   });
 
-  // gsap.registerPlugin(ScrollTrigger);
+  // Números
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.from("#numeros", {
+    duration: 1,
+    x: -1000,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#numeros",
+    },
+  });
 
-  // gsap.from("#step", {
-  //   duration: 2,
-  //   y: 300,
-  //   opacity: 0,
-  //   stagger: { each: 0.2 },
-  //   ease: "power3.out",
-  //   ScrollTrigger: {
-  //     trigger: "#step",
-  //   },
-  // });
+  gsap.from(".num__grid div", {
+    duration: 1,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#numeros",
+    },
+  });
+
+  // Portfólio
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.from("#portfolio .sec__tit", {
+    duration: 1.5,
+    delay: 1,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#portfolio",
+    },
+  });
+
+  gsap.from(".port__itens div", {
+    duration: 1,
+    delay: 2,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#portfolio",
+    },
+  });
+
+  // Feedback
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.from(".feed__img", {
+    duration: 1.5,
+    delay: 0.5,
+
+    x: -600,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#feedback",
+    },
+  });
+
+  gsap.from(".feed__tit", {
+    duration: 1,
+    delay: 0.7,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#feedback",
+    },
+  });
+
+  gsap.from(".feed__depo", {
+    duration: 1,
+    delay: 0.9,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#feedback",
+    },
+  });
+
+  gsap.from(".feed__pessoa", {
+    duration: 1,
+    delay: 1.1,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#feedback",
+    },
+  });
 });
