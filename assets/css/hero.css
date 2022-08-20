@@ -9,7 +9,7 @@
 .hero__det {
   padding: 0.5rem 1rem;
   background-color: var(--c0);
-  display: inline-flex !important;
+  display: inline-block !important;
   font-family: "Mukta", sans-serif;
   font-size: 14px;
 }
