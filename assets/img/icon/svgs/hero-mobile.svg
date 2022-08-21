@@ -1,30 +1,32 @@
 <svg width="1063" height="794" viewBox="0 0 1063 794" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect opacity="0.8" x="0.710845" y="2.09408" width="388.311" height="732.458" rx="27.5" transform="matrix(0.991445 0.130526 -0.707107 0.707107 602.621 221.03)" stroke="url(#paint0_linear_567_840)" stroke-width="5"/>
-<circle opacity="0.8" cx="963" cy="273" r="98.5" stroke="url(#paint1_linear_567_840)" stroke-width="3"/>
-<rect x="140" y="732" width="500" height="3" rx="1.5" transform="rotate(-90 140 732)" fill="url(#paint2_linear_567_840)"/>
-<rect x="788" y="500" width="500" height="3" rx="1.5" transform="rotate(-90 788 500)" fill="url(#paint3_linear_567_840)"/>
-<g filter="url(#filter0_d_567_840)">
+<g id="hero-mobile">
+<rect id="phone-fundo" opacity="0.8" x="0.710845" y="2.09408" width="388.311" height="732.458" rx="27.5" transform="matrix(0.991445 0.130526 -0.707107 0.707107 602.621 221.03)" stroke="url(#paint0_linear_567_840)" stroke-width="5"/>
+<circle id="phone-circ" opacity="0.8" cx="963" cy="273" r="98.5" stroke="url(#paint1_linear_567_840)" stroke-width="3"/>
+<rect id="phone-starfall2" x="140" y="732" width="500" height="3" rx="1.5" transform="rotate(-90 140 732)" fill="url(#paint2_linear_567_840)"/>
+<rect id="phone-starfall1" x="788" y="500" width="500" height="3" rx="1.5" transform="rotate(-90 788 500)" fill="url(#paint3_linear_567_840)"/>
+<g id="phone-tela" filter="url(#filter0_d_567_840)">
 <rect width="400" height="750" rx="30" transform="matrix(0.991445 0.130526 -0.707107 0.707107 573.041 161)" fill="#FAF8F5"/>
 </g>
-<g filter="url(#filter1_d_567_840)">
-<rect width="80" height="15" rx="7.5" transform="matrix(0.991445 0.130526 -0.707107 0.707107 609.735 205.872)" fill="#C3C3C3"/>
-<rect width="120" height="15" rx="7.5" transform="matrix(0.991445 0.130526 -0.707107 0.707107 630.949 184.658)" fill="#C3C3C3"/>
-<circle r="50" transform="matrix(0.991445 0.130526 -0.707107 0.707107 524.748 189.882)" fill="#C3C3C3"/>
-<rect opacity="0.5" width="120" height="247" rx="16" transform="matrix(0.991445 0.130526 -0.707107 0.707107 479.269 523.979)" fill="url(#paint4_linear_567_840)"/>
-<g filter="url(#filter2_b_567_840)">
+<g id="elementos" filter="url(#filter1_d_567_840)">
+<rect id="phone-desc2" width="80" height="15" rx="7.5" transform="matrix(0.991445 0.130526 -0.707107 0.707107 609.735 205.872)" fill="#C3C3C3"/>
+<rect id="phone-desc1" width="120" height="15" rx="7.5" transform="matrix(0.991445 0.130526 -0.707107 0.707107 630.949 184.658)" fill="#C3C3C3"/>
+<circle id="phone-ft" r="50" transform="matrix(0.991445 0.130526 -0.707107 0.707107 524.748 189.882)" fill="#C3C3C3"/>
+<rect id="phone-retang" opacity="0.5" width="120" height="247" rx="16" transform="matrix(0.991445 0.130526 -0.707107 0.707107 479.269 523.979)" fill="url(#paint4_linear_567_840)"/>
+<g id="phone-grid5" filter="url(#filter2_b_567_840)">
 <rect width="87" height="90" rx="16" transform="matrix(0.991445 0.130526 -0.707107 0.707107 457.737 380.309)" fill="#C8C8C8" fill-opacity="0.2"/>
 </g>
-<g filter="url(#filter3_b_567_840)">
+<g id="phone-grid4" filter="url(#filter3_b_567_840)">
 <rect width="147" height="90" rx="16" transform="matrix(0.991445 0.130526 -0.707107 0.707107 299.106 359.425)" fill="#C8C8C8" fill-opacity="0.2"/>
 </g>
-<g filter="url(#filter4_b_567_840)">
+<g id="phone-grid3" filter="url(#filter4_b_567_840)">
 <rect width="97" height="190" rx="16" transform="matrix(0.991445 0.130526 -0.707107 0.707107 633.593 322.651)" fill="#C8C8C8" fill-opacity="0.2"/>
 </g>
-<g filter="url(#filter5_b_567_840)">
+<g id="phone-grid2" filter="url(#filter5_b_567_840)">
 <rect width="147" height="90" rx="16" transform="matrix(0.991445 0.130526 -0.707107 0.707107 472.961 301.767)" fill="#C8C8C8" fill-opacity="0.2"/>
 </g>
-<g filter="url(#filter6_b_567_840)">
+<g id="phone-grid1" filter="url(#filter6_b_567_840)">
 <rect width="87" height="90" rx="16" transform="matrix(0.991445 0.130526 -0.707107 0.707107 369.817 288.714)" fill="#C8C8C8" fill-opacity="0.2"/>
+</g>
 </g>
 </g>
 <defs>
