@@ -2,8 +2,8 @@
 <g id="hero-mobile">
 <rect id="phone-fundo" opacity="0.8" x="0.710845" y="2.09408" width="388.311" height="732.458" rx="27.5" transform="matrix(0.991445 0.130526 -0.707107 0.707107 602.621 221.03)" stroke="url(#paint0_linear_567_840)" stroke-width="5"/>
 <circle id="phone-circ" opacity="0.8" cx="963" cy="273" r="98.5" stroke="url(#paint1_linear_567_840)" stroke-width="3"/>
-<rect id="phone-starfall2" x="140" y="732" width="500" height="3" rx="1.5" transform="rotate(-90 140 732)" fill="url(#paint2_linear_567_840)"/>
-<rect id="phone-starfall1" x="788" y="500" width="500" height="3" rx="1.5" transform="rotate(-90 788 500)" fill="url(#paint3_linear_567_840)"/>
+<rect id="phone-starfall2" x="140.5" y="731.5" width="499" height="2" rx="1" transform="rotate(-90 140.5 731.5)" stroke="url(#paint2_linear_567_840)"/>
+<rect id="phone-starfall1" x="788.5" y="499.5" width="499" height="2" rx="1" transform="rotate(-90 788.5 499.5)" stroke="url(#paint3_linear_567_840)"/>
 <g id="phone-tela" filter="url(#filter0_d_567_840)">
 <rect width="400" height="750" rx="30" transform="matrix(0.991445 0.130526 -0.707107 0.707107 573.041 161)" fill="#FAF8F5"/>
 </g>

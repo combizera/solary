@@ -68,3 +68,94 @@
     top: var(--gap0);
   }
 }
+
+/* Animações da linha */
+.bg-heroline1 {
+  animation: hero-line 12s ease 2s infinite alternate;
+}
+
+.bg-heroline2 {
+  animation: hero-line 16s ease 2s infinite alternate;
+}
+
+.bg-heroline3 {
+  animation: hero-line 25s ease 2s infinite alternate;
+}
+
+@keyframes hero-line {
+  0% {
+    stroke-dasharray: 1 50;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    opacity: 1;
+  }
+  30% {
+    stroke-dasharray: 10 30;
+    stroke-dashoffset: 5;
+    stroke-width: 1;
+    opacity: 1;
+  }
+  60% {
+    stroke-dasharray: 10 10;
+    stroke-dashoffset: 10;
+    stroke-width: 1;
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 10 5;
+    stroke-dashoffset: 10;
+    stroke-width: 1;
+    opacity: 1;
+  }
+}
+
+/* Animações Starfall */
+.starfall-hero1 {
+  animation: hero-star 3s ease 0s infinite;
+}
+
+.starfall-hero2 {
+  animation: hero-star 6s ease 0s infinite;
+}
+
+.starfall-hero3 {
+  animation: hero-star2 6s ease 0s infinite;
+}
+
+.starfall-hero4 {
+  animation: hero-star2 9s ease 0s infinite;
+}
+
+@keyframes hero-star {
+  0% {
+    opacity: 1;
+    width: 0;
+    stroke-width: 5;
+
+    x: 500px;
+  }
+  30% {
+    opacity: 1;
+    x: 300px;
+    stroke-width: 5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hero-star2 {
+  0% {
+    opacity: 1;
+    width: 0;
+    x: 900px;
+  }
+  40% {
+    opacity: 1;
+    width: 299px;
+    x: 700px;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
