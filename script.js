@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   var tl = gsap.timeline();
 
   tl
-    // cabacalho
+    // cabecalho
     .from(".logo", {
       duration: 1,
       opacity: 0,

@@ -58,14 +58,14 @@ img {
 .container {
   max-width: 1220px;
   margin: 0 auto;
-  /* border: 2px solid green; */
+  border: 2px solid green;
 }
 
 @media (max-width: 800px) {
   .container {
     max-width: 1220px;
     margin: 0 auto;
-    /* border: 2px solid green; */
+    border: 2px solid green;
   }
 }
 

@@ -1,10 +1,15 @@
+/* Base */
 @import url("./base.css");
-@import url("./header.css");
-@import url("./hero.css");
-@import url("./meto.css");
-@import url("./step.css");
-@import url("./num.css");
-@import url("./port.css");
-@import url("./feed.css");
-@import url("./svgs.css");
 @import url("./gap.css");
+@import url("./svgs.css");
+@import url("./svgs-keyframes.css");
+
+/* Seções */
+@import url("./../css/secoes/header.css");
+@import url("./../css/secoes/hero.css");
+@import url("./../css/secoes/meto.css");
+@import url("./../css/secoes/step.css");
+@import url("./../css/secoes/num.css");
+@import url("./../css/secoes/port.css");
+@import url("./../css/secoes/feed.css");
+@import url("./../css/secoes/diferenciais.css");

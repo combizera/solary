@@ -33,24 +33,6 @@
   animation: rotate 4s ease infinite alternate;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(60deg);
-  }
-}
-
-@keyframes rotate2 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(270deg);
-  }
-}
-
 @media (max-width: 800px) {
   .svg-hero {
     transform: scale(1.8) rotate(30deg);
@@ -82,33 +64,6 @@
   animation: hero-line 25s ease 2s infinite alternate;
 }
 
-@keyframes hero-line {
-  0% {
-    stroke-dasharray: 1 50;
-    stroke-dashoffset: 0;
-    stroke-width: 1;
-    opacity: 1;
-  }
-  30% {
-    stroke-dasharray: 10 30;
-    stroke-dashoffset: 5;
-    stroke-width: 1;
-    opacity: 1;
-  }
-  60% {
-    stroke-dasharray: 10 10;
-    stroke-dashoffset: 10;
-    stroke-width: 1;
-    opacity: 1;
-  }
-  100% {
-    stroke-dasharray: 10 5;
-    stroke-dashoffset: 10;
-    stroke-width: 1;
-    opacity: 1;
-  }
-}
-
 /* Animações Starfall */
 .starfall-hero1 {
   animation: hero-star 3s ease 0s infinite;
@@ -126,36 +81,32 @@
   animation: hero-star2 9s ease 0s infinite;
 }
 
-@keyframes hero-star {
-  0% {
-    opacity: 1;
-    width: 0;
-    stroke-width: 5;
-
-    x: 500px;
-  }
-  30% {
-    opacity: 1;
-    x: 300px;
-    stroke-width: 5;
-  }
-  100% {
-    opacity: 0;
-  }
+#phone-fundo {
+  animation: line 5s ease infinite alternate;
 }
-@keyframes hero-star2 {
-  0% {
-    opacity: 1;
-    width: 0;
-    x: 900px;
-  }
-  40% {
-    opacity: 1;
-    width: 299px;
-    x: 700px;
-  }
-  100% {
-    opacity: 0;
-    width: 0;
-  }
+
+#phone-circ {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotate2 10s cubic-bezier(0.72, -0.16, 0.23, 1.04) infinite;
+}
+
+#phone-retang {
+  animation: expandir 2s ease infinite alternate;
+}
+
+#phone-grid5 {
+  animation: grid-mais 3s ease infinite alternate;
+}
+
+#phone-grid4 {
+  animation: grid-menos 3s ease infinite alternate;
+}
+
+#phone-grid1 {
+  animation: grid-mais 3s ease 1s infinite alternate;
+}
+
+#phone-grid2 {
+  animation: grid-menos 3s ease 1s infinite alternate;
 }
