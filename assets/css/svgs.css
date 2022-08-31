@@ -1,11 +1,10 @@
 .relative {
   position: relative;
-  height: 100vh;
 }
 
 .bg__hero {
   position: absolute;
-  top: 0;
+  top: var(--gap7);
   left: 0;
 
   width: 100%;
@@ -22,8 +21,92 @@
   margin: 1px;
 }
 
+#quad-hero2 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotate 4s ease infinite alternate;
+}
+
+#quad-hero1 {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotate 4s ease infinite alternate;
+}
+
 @media (max-width: 800px) {
   .svg-hero {
     transform: scale(1.8) rotate(30deg);
   }
+}
+
+@media (min-width: 1800px) {
+  .svg-hero {
+    transform: scale(1.5);
+  }
+
+  .bg__hero {
+    overflow-y: visible !important;
+    height: 100%;
+    top: var(--gap0);
+  }
+}
+
+/* Animações da linha */
+.bg-heroline1 {
+  animation: hero-line 12s ease 2s infinite alternate;
+}
+
+.bg-heroline2 {
+  animation: hero-line 16s ease 2s infinite alternate;
+}
+
+.bg-heroline3 {
+  animation: hero-line 25s ease 2s infinite alternate;
+}
+
+/* Animações Starfall */
+.starfall-hero1 {
+  animation: hero-star 3s ease 0s infinite;
+}
+
+.starfall-hero2 {
+  animation: hero-star 6s ease 0s infinite;
+}
+
+.starfall-hero3 {
+  animation: hero-star2 6s ease 0s infinite;
+}
+
+.starfall-hero4 {
+  animation: hero-star2 9s ease 0s infinite;
+}
+
+#phone-fundo {
+  animation: line 5s ease infinite alternate;
+}
+
+#phone-circ {
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: rotate2 10s cubic-bezier(0.72, -0.16, 0.23, 1.04) infinite;
+}
+
+#phone-retang {
+  animation: expandir 2s ease infinite alternate;
+}
+
+#phone-grid5 {
+  animation: grid-mais 3s ease infinite alternate;
+}
+
+#phone-grid4 {
+  animation: grid-menos 3s ease infinite alternate;
+}
+
+#phone-grid1 {
+  animation: grid-mais 3s ease 1s infinite alternate;
+}
+
+#phone-grid2 {
+  animation: grid-menos 3s ease 1s infinite alternate;
 }

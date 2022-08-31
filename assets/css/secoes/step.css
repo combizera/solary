@@ -1,5 +1,6 @@
 .step {
   padding: 80px;
+  display: none;
 }
 
 .step_grid {

@@ -1,0 +1,56 @@
+.diferenciais {
+  padding: 4rem 100px;
+  font-family: "Saira", sans-serif;
+}
+
+.diferenciais h4 {
+  font-weight: 700;
+  font-size: 3.5rem;
+
+  color: var(--c3);
+  display: flex;
+  justify-content: center;
+}
+
+.diferenciais__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.diferenciais__txt {
+  padding: 0 2rem;
+}
+
+.diferenciais__txt span {
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #7f62f4 0%, #bc44f4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.diferenciais__txt h5 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 125%;
+  color: var(--c3);
+}
+
+.diferenciais__txt p {
+  margin-top: 1rem;
+  font-weight: 500;
+  line-height: 125%;
+  color: var(--c2);
+}
+
+#diferenciais__responsivo {
+  margin: 6rem 0;
+}
+
+#diferenciais__codigo {
+  margin-bottom: 4rem;
+}
