@@ -17,25 +17,51 @@
   align-items: center;
 }
 
-.svg-hero {
-  margin: 1px;
-}
-
 #quad-hero2 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: rotate 4s ease infinite alternate;
+  animation: rotate 20s ease infinite alternate;
 }
 
 #quad-hero1 {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: rotate 4s ease infinite alternate;
+  animation: rotate2 20s ease infinite alternate;
 }
 
 @media (max-width: 800px) {
   .svg-hero {
-    transform: scale(1.8) rotate(30deg);
+    transform: scale(2) rotate(30deg);
+  }
+  .relative {
+    position: relative;
+  }
+
+  .bg__hero {
+    position: absolute;
+    top: 500px;
+    left: 0;
+
+    width: 100%;
+
+    /* overflow: hidden; */
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #quad-hero2 {
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation: rotate 20s ease infinite alternate;
+  }
+
+  #quad-hero1 {
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation: rotate2 20s ease infinite alternate;
   }
 }
 
@@ -81,6 +107,16 @@
   animation: hero-star2 9s ease 0s infinite;
 }
 
+#phone-starfall2 {
+  animation: hero-star 3s ease 0s infinite;
+}
+
+#phone-starfall1 {
+  animation: hero-star2 2s ease 1s infinite;
+}
+
+/* Animações Celular */
+
 #phone-fundo {
   animation: line 5s ease infinite alternate;
 }
@@ -88,7 +124,7 @@
 #phone-circ {
   transform-origin: center center;
   transform-box: fill-box;
-  animation: rotate2 10s cubic-bezier(0.72, -0.16, 0.23, 1.04) infinite;
+  animation: rotate2 5s cubic-bezier(0.72, -0.16, 0.23, 1.04) infinite;
 }
 
 #phone-retang {
@@ -109,4 +145,59 @@
 
 #phone-grid2 {
   animation: grid-menos 3s ease 1s infinite alternate;
+}
+
+/* Animações Code */
+
+#code-fundo {
+  animation: line 5s ease infinite alternate;
+}
+
+#code-r1 {
+  animation: code-r1 0.5s ease;
+}
+
+#code-r2 {
+  animation: code-r2 0.5s ease 0.5s forwards;
+  opacity: 0;
+}
+
+#code-r3 {
+  animation: code-r3 0.8s ease 1s forwards;
+  opacity: 0;
+}
+
+#code-r4 {
+  animation: code-r4 0.5s ease 1.5s forwards;
+  opacity: 0;
+}
+
+#code-r5 {
+  animation: code-r5 0.5s ease 2s forwards;
+  opacity: 0;
+}
+
+#code-r6 {
+  animation: code-r6 0.5s ease 2.5s forwards;
+  opacity: 0;
+}
+
+#code-r7 {
+  animation: code-r7 0.5s ease 3s forwards;
+  opacity: 0;
+}
+
+#code-r8 {
+  animation: code-r8 0.5s ease 3.5s forwards;
+  opacity: 0;
+}
+
+#code-r9 {
+  animation: code-r9 0.5s ease 4s forwards;
+  opacity: 0;
+}
+
+#code-r10 {
+  animation: code-r10 0.5s ease 4.5s forwards;
+  opacity: 0;
 }

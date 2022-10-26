@@ -1,0 +1,24 @@
+body {
+  background-color: #ebe7e1;
+}
+
+.erro-tit {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120px;
+
+  /* c3 */
+
+  color: #404040;
+}
+
+.erro-desc {
+  font-family: "Saira", sans-serif;
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #707070;
+}

@@ -3,6 +3,7 @@
 @import url("./gap.css");
 @import url("./svgs.css");
 @import url("./svgs-keyframes.css");
+@import url("./swiper.css");
 
 /* Seções */
 @import url("./../css/secoes/header.css");
@@ -11,5 +12,6 @@
 @import url("./../css/secoes/step.css");
 @import url("./../css/secoes/num.css");
 @import url("./../css/secoes/port.css");
-@import url("./../css/secoes/feed.css");
+@import url("./../css/secoes/depo.css");
 @import url("./../css/secoes/diferenciais.css");
+@import url("./../css/secoes/footer.css");

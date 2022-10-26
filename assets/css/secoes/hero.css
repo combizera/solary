@@ -33,14 +33,15 @@
   justify-content: center;
 }
 
-.hero__btn a:last-child {
+.hero__cta2 {
   margin-left: var(--gap3);
 }
 
 @media (max-width: 800px) {
   .hero__grid {
     grid-template-columns: 1fr;
-    padding: 40px 20px;
+    padding: 80px 20px !important;
+    height: calc(100vh - 114px);
   }
 
   .hero__tit {
@@ -54,5 +55,17 @@
 
   .hero__btn a:last-child {
     margin-left: var(--gap0);
+  }
+
+  .hero__cta {
+    display: inline-flex;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  .hero__cta2 {
+    display: inline-flex;
+    margin-left: 0;
+    width: 100%;
+    text-transform: uppercase;
   }
 }

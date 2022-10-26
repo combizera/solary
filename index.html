@@ -7,41 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Descrição -->
+    <meta name="description" content="Construímos produtos intuitivos que atendem às necessidades dos usuários. Projetamos do 0, não utilizamos layouts prontos, cada produto é único e completo">
+
     <!-- Fontes usadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Poppins:wght@300;700&family=Saira:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Solaria</title>
+    <title>Solary</title>
+
+    <!-- Pacote Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <header class="container">
-        <div class="logo"><a href="./entry.html"><img src="./assets/img/icon/log.svg" alt="Logotipo Solaria"></a></div>
-        <div class="header__nav">
-            <nav>
-                <ul>
-                    <li class="header1">
-                        <a href="#metodologia">
-                            metodologia
-                        </a>
-                    </li>
-                    <li class=" header2">
-                        <a href="#">
-                            passo a passo
-                        </a>
-                    </li>
-                    <li class="header3">
-                        <a href="#">
-                            portfólio
-                        </a>
-                    </li>
-                    <li class="header4">
-                        <a href="#">
-                            depoimentos
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="header-bloco">
+            <div class="header-left">
+                <a href="#metodologia">
+                    <p class="header-1"> metodologia</p>
+                </a>
+                <a href="#diferenciais">
+                    <p class="header-2">diferenciais</p>
+                </a>
+            </div>
+            <div class="header-logo">
+                <a href="#">
+                    <img src="./assets/img/icon/log.svg" alt="Ícone Solary"></a>
+            </div>
+            <div class="header-right">
+                <a href="#formulario">
+                    <p class="header-3">formulario</p>
+                </a>
+                <a href="#contato">
+                    <p class="header-4">contato</p>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -53,7 +59,7 @@
                         <path class="bg-heroline1" id="bg-heroline1" opacity="0.5" d="M1920 451.471C1447.3 539.781 1186.34 568.885 754.682 451.471C521.619 388.077 332.639 393.673 4.29153e-05 451.471" stroke="#B0B0B0" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 10" />
                         <path class="bg-heroline2" id="bg-heroline2" opacity="0.5" d="M1941 293.462C1463.13 197.254 1199.32 165.548 762.936 293.462C527.324 362.526 336.277 356.429 8.58307e-06 293.462" stroke="#B0B0B0" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 10" />
                         <path class="bg-heroline3" id="bg-heroline3" opacity="0.2" d="M-30.2587 396.514C310.411 249.8 503.226 211.754 852.447 247.888C1371.57 301.601 1607.47 229.656 1925.46 67.2181" stroke="#B0B0B0" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 10" />
-                        <rect class="quad-hero2" id="quad-hero2" opacity="0.5" x="1051.4" y="209.19" width="92.6193" height="92.6193" rx="10" transform="rotate(-144.493 1051.4 209.19)" fill="url(#paint0_linear_564_648)" />
+                        <rect class="quad-hero2" id="quad-hero2" opacity="0.5" x="1051" y="200" width="70" height="70" rx="10" transform="rotate(-144.493 1051.4 209.19)" fill="url(#paint0_linear_564_648)" />
                         <rect class="quad-hero2" id="quad-hero1" opacity="0.5" x="1535" y="388.595" width="96.0073" height="96.0073" rx="10" transform="rotate(-46.4597 1535 388.595)" fill="url(#paint1_linear_564_648)" />
                         <circle class="bola-hero1" id="bola-hero1" cx="689" cy="436" r="30" fill="url(#paint2_linear_564_648)" />
                         <circle class="bola-hero2" id="bola-hero2" cx="1304.64" cy="262.64" r="15" transform="rotate(78.7425 1304.64 262.64)" fill="url(#paint3_linear_564_648)" />
@@ -115,15 +121,11 @@
                         </div>
                         <div class="hero__btn mT-5">
                             <div class="hero__cta">
-                                <a class="btn__pri borda" href="">veja alguns projetos</a>
+                                <a class="btn__pri borda" href="#portfolio">veja alguns projetos</a>
                             </div>
-                            <div class="hero__cta2"><a class="btn__sec borda" href="">faça um orçamento</a>
+                            <div class="hero__cta2"><a class="btn__sec borda" href="wa.me/5553999902979">faça um orçamento</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="hero__img">
-
-
                     </div>
                 </div>
             </section>
@@ -278,12 +280,78 @@
                             </linearGradient>
                         </defs>
                     </svg>
-
                 </div>
             </div>
             <div id="diferenciais__codigo" class="diferenciais__item">
                 <div class="diferenciais__img">
-                    <img src="./assets/img/icon/svgs/anim-code.svg" alt="">
+                    <svg id="svg-code" viewBox="0 0 880 599" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="anim-code">
+                            <rect id="code-fundo" x="2.51815" y="1.63906" width="543.791" height="504.92" rx="30.8675" transform="matrix(0.989651 -0.143493 0.269424 0.963022 134.585 89.0259)" stroke="url(#paint0_linear_602_529)" stroke-width="4" />
+                            <rect id="phone-starfall1" x="95.6436" y="446.665" width="273.396" height="0.5" rx="0.25" transform="rotate(-90 95.6436 446.665)" stroke="url(#paint1_linear_602_529)" stroke-width="0.5" />
+                            <rect id="phone-starfall2" x="744.228" y="282.875" width="273.396" height="0.5" rx="0.25" transform="rotate(-90 744.228 282.875)" stroke="url(#paint2_linear_602_529)" stroke-width="0.5" />
+                            <g id="Rectangle 936" filter="url(#filter0_d_602_529)">
+                                <rect width="547.791" height="383.454" rx="32.8675" transform="matrix(0.989651 -0.143493 0.269424 0.963022 69.6465 180.138)" fill="#FAF8F5" />
+                            </g>
+                            <g id="Rectangle 925" filter="url(#filter1_d_602_529)">
+                                <rect width="547.791" height="383.454" rx="32.8675" transform="matrix(0.989651 -0.143493 0.269424 0.963022 108.54 132.479)" fill="#FAF8F5" />
+                            </g>
+                            <rect id="code-r1" width="246.506" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 152.874 169.966)" fill="#C3C3C3" />
+                            <rect id="code-r2" width="164.337" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 200.16 218.003)" fill="#C3C3C3" />
+                            <rect id="code-r3" opacity="0.5" width="164.337" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 384.482 191.278)" fill="url(#paint3_linear_602_529)" />
+                            <rect id="code-r4" width="164.337" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 568.803 164.552)" fill="#C3C3C3" />
+                            <rect id="code-r5" width="273.896" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 247.446 266.04)" fill="#C3C3C3" />
+                            <rect id="code-r6" width="246.506" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 262.205 318.794)" fill="#C3C3C3" />
+                            <rect id="code-r7" width="54.7791" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 527.845 280.278)" fill="#C3C3C3" />
+                            <rect id="code-r8" width="150.095" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 244.437 376.264)" fill="#C3C3C3" />
+                            <rect id="code-r9" width="150.095" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 414.663 351.582)" fill="#C3C3C3" />
+                            <rect id="code-r10" opacity="0.5" width="109.558" height="27.3896" rx="8.21687" transform="matrix(0.989651 -0.143493 0.269424 0.963022 226.668 433.734)" fill="url(#paint4_linear_602_529)" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_602_529" x="44.4421" y="105.896" width="662.975" height="472.021" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dx="-16.4337" dy="16.4337" />
+                                <feGaussianBlur stdDeviation="8.21687" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_602_529" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_602_529" result="shape" />
+                            </filter>
+                            <filter id="filter1_d_602_529" x="83.3354" y="58.238" width="662.975" height="472.021" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dx="-16.4337" dy="16.4337" />
+                                <feGaussianBlur stdDeviation="8.21687" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_602_529" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_602_529" result="shape" />
+                            </filter>
+                            <linearGradient id="paint0_linear_602_529" x1="535.071" y1="14.719" x2="-49.2344" y2="393.601" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C3C3C3" />
+                                <stop offset="0.921875" stop-color="#C3C3C3" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_602_529" x1="95.3936" y1="447.399" x2="369.289" y2="447.399" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#A48FF5" />
+                                <stop offset="0.421875" stop-color="#F3A38D" />
+                                <stop offset="0.869792" stop-color="#F3A38D" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_602_529" x1="743.978" y1="283.609" x2="1017.87" y2="283.609" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#A48FF5" />
+                                <stop offset="0.421875" stop-color="#F3A38D" />
+                                <stop offset="0.869792" stop-color="#F3A38D" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_602_529" x1="82.1687" y1="0" x2="82.1687" y2="27.3896" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#7F62F4" />
+                                <stop offset="1" stop-color="#BC44F4" />
+                            </linearGradient>
+                            <linearGradient id="paint4_linear_602_529" x1="54.7791" y1="0" x2="54.7791" y2="27.3896" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#7F62F4" />
+                                <stop offset="1" stop-color="#BC44F4" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
                 </div>
                 <div class="diferenciais__txt">
                     <span>Codificação</span>
@@ -292,83 +360,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section id="step" class="step container">
-            <div class="sec__tit">
-                <h2>Ainda está confuso?</h2>
-                <p>sem problemas, a gente desenha (=</p>
-            </div>
-            <p>Clique nos ícones para mudar a imagem</p>
-            <div class="step_grid">
-                <div class="step__steps">
-                    <ul>
-                        <li>
-                            <div class="step__icon">
-                                <a href="#">
-                                    <img src="./assets/img/icon/bolinha.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="step__txt">
-                                <h4>Passo 1 - Briefing</h4>
-                                <p>Reunião para entender quais os problemas do cliente, com base nessas informações, começar a elaborar soluções para resolver o problema.</p>
-                                <a href="">Próximo Passo</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="step__icon">
-                                <a href="#">
-                                    <img src="./assets/img/icon/bolinha.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="step__txt">
-                                <h4>Passo 2 - Briefing</h4>
-                                <p>Reunião para entender quais os problemas do cliente, com base nessas informações, começar a elaborar soluções para resolver o problema.</p>
-                                <a href="">Próximo Passo</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="step__icon">
-                                <a href="#">
-                                    <img src="./assets/img/icon/bolinha.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="step__txt">
-                                <h4>Passo 3 - Briefing</h4>
-                                <p>Reunião para entender quais os problemas do cliente, com base nessas informações, começar a elaborar soluções para resolver o problema.</p>
-                                <a href="">Próximo Passo</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="step__icon">
-                                <a href="#">
-                                    <img src="./assets/img/icon/bolinha.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="step__txt">
-                                <h4>Passo 4 - Briefing</h4>
-                                <p>Reunião para entender quais os problemas do cliente, com base nessas informações, começar a elaborar soluções para resolver o problema.</p>
-                                <a href="">Próximo Passo</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="step__icon">
-                                <a href="#">
-                                    <img src="./assets/img/icon/bolinha.svg" alt="">
-                                </a>
-                            </div>
-                            <div class="step__txt">
-                                <h4>Lançamento!</h4>
-                                <p>Reunião para entender quais os problemas do cliente, com base nessas informações, começar a elaborar soluções para resolver o problema.</p>
-                                <a href="">Próximo Passo</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="step__img">
-                    <img src="./assets/img/fake.png" alt="">
-                </div>
-            </div>
-        </section> -->
 
         <article id="numeros" class="num">
             <div class="num__grid container">
@@ -402,38 +393,123 @@
                     <h2>Trabalhos Recentes</h2>
                     <p>Selecionamos alguns projetos que amamos desenvolver. Basta clicar na imagem e ver tooodo o processo, do briefing ao site no ar</p>
                 </div>
+                <div class="port-grid">
+                    <div class="port-item1">
+                        <a href="https://combizera.github.io/paiN2015/">
+                            <img src="./assets/img/paiN.webp" alt="Projeto paiN Gaming">
+                            <div class="port-txt">
+                                <h6>paiN 2015</h6>
+                                <p>Website</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="port-item2">
+                        <a href="https://bortoluzziadvocacia.com.br/">
+                            <img src="./assets/img/bortoluzzi.webp" alt="Projeto Bortoluzzi Advocacia">
+                            <div class="port-txt">
+                                <h6>Bortoluzzi Advocacia</h6>
+                                <p>Website & Blog</p>
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="port__itens">
-                    <div class="port__item1">
-                        <img src="./assets/img/fake2.png" alt="">
+                    <div class="port-item3">
+                        <a href="https://flaviomaciel.com.br/">
+                            <img src="./assets/img/flavioadv.webp" alt="Projeto Bortoluzzi Advocacia">
+                            <div class="port-txt">
+                                <h6>Escritório Flavio Maciel</h6>
+                                <p>Website & Landing Page</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="port__item2">
-                        <img src="./assets/img/fake2.png" alt="">
-                    </div>
-                    <div class="port__item3">
-                        <img src="./assets/img/fake2.png" alt="">
-                    </div>
-                    <div class="port__item4">
-                        <img src="./assets/img/fake2.png" alt="">
-                    </div>
-                    <div class="port__item5">
-                        <img src="./assets/img/fake2.png" alt="">
+                    <div class="port-item4">
+                        <a href="https://fluicoffee.com/">
+                            <img src="./assets/img/flui.webp" alt="Projeto Bortoluzzi Advocacia">
+                            <div class="port-txt">
+                                <h6>Fluicoffee</h6>
+                                <p>Website & Identida Visual</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <section id="feedback" class="feed">
-            <div class="feed__grid container">
-                <div class="feed__img"><img src="./assets/img/icon/avaliacao.svg" alt=""></div>
-                <div class="feed__txt">
-                    <div class="feed__tit">O que dizem sobre nós</div>
-                    <p class="feed__depo"><span>“</span> bom, show de bola. Graças a esse site minhas vendas aumentaram 100% vmuito bom, show de bola. Graças a esse site minhas vendas aumentaram 100%</p>
-                    <p class="feed__pessoa">Zézinho Almeida</p>
+        <section class="depo container">
+            <h4>Depoimentos</h4>
+            <div class="depo-grid">
+                <div class="depo-main">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="depo-img">
+                                    <img src="./assets/img/gui.webp" alt="Guilherme Ferreira">
+                                </div>
+                                <div class='depo-txt'>
+                                    <span>“</span>
+                                    <p>muito bom, show de bola. Graças a esse site minhas vendas aumentaram 100% vmuito bom, show de bola. Graças a esse site minhas vendas aumentaram 100%</p>
+                                    <p class="depo-nome">Guilherme</p>
+                                    <p class="depo-prof">Best Neon of Silver</p>
+                                    </depo-txt>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="depo-img">
+                                    <img src="./assets/img/gabi.webp" alt="Gabriela Bortoluzzi">
+                                </div>
+                                <div class='depo-txt'>
+                                    <span>“</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ultricies eleifend. Mauris interdum augue sit amet nisi blandit, vel fringilla quam dignissim. Maecenas nibh leo, luctus eget dui vel, mattis bibendum tellus</p>
+                                    <p class="depo-nome">Gabriela Bortoluzzi</p>
+                                    <p class="depo-prof">Bortoluzzi Advocacia</p>
+                                    </depo-txt>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="depo-img">
+                                    <img src="./assets/img/flavio.webp" alt="Flavio Maciel">
+                                </div>
+                                <div class='depo-txt'>
+                                    <span>“</span>
+                                    <p>Aliquam id ornare quam. Nulla molestie nibh eget arcu ornare, quis semper enim luctus. Donec vitae scelerisque nisl. Mauris tincidunt tempus facilisis. Aenean eget ante ac est porttitor consequat at consequat turpis.</p>
+                                    <p class="depo-nome">Flavio Maciel</p>
+                                    <p class="depo-prof">Escritório de advocacia Maciel</p>
+                                    </depo-txt>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                 </div>
-            </div>
         </section>
+
     </main>
+
+    <footer class="container">
+        <div class="footer-logo"><img src="./assets/img/icon/log.svg" alt="Ícone Solary"></div>
+        <div class="footer-dados">
+            <a href="mailto:ola@agenciasolary.com.br" class="footer-email">ola@agenciasolary.com.br</a>
+            <div class="footer-social">
+                <a href="#"> <img src="./assets/img/icon/svgs/soc-zap.svg" alt="Whatsapp da Solary"></a>
+                <a href="#"> <img src="./assets/img/icon/svgs/soc-ig.svg" alt="Instagram da Solary"></a>
+                <a href="#"> <img src="./assets/img/icon/svgs/soc-be.svg" alt="Behance da Solary" id="behance"></a>
+            </div>
+            <p class="footer-cnpj">CNPJ: 47.409.055/0001-13</p>
+        </div>
+    </footer>
 
 
     <!-- Bib. GSAP -->
@@ -443,7 +519,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js" integrity="sha512-6BvDODEWgjWWyBrg6YFio6xmzgKWpf54tDlnCtG05m++/jgh/7jQcx6jUJrq44lB84cf68FzYiT0LipabA5g8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Meus Códigos JS -->
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
+    <script src="./swiper.js"></script>
 </body>
 
 </html>

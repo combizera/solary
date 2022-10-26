@@ -3,15 +3,6 @@
   font-family: "Saira", sans-serif;
 }
 
-.diferenciais h4 {
-  font-weight: 700;
-  font-size: 3.5rem;
-
-  color: var(--c3);
-  display: flex;
-  justify-content: center;
-}
-
 .diferenciais__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -53,4 +44,31 @@
 
 #diferenciais__codigo {
   margin-bottom: 4rem;
+}
+
+@media (max-width: 800px) {
+  .diferenciais {
+    padding: 4rem 20px;
+  }
+
+  .diferenciais__item {
+    grid-template-columns: 1fr;
+  }
+
+  .diferenciais__txt {
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+  }
+
+  #diferenciais__responsivo {
+    margin: 6rem 0 10rem 0;
+  }
+
+  #diferenciais__codigo {
+    margin-bottom: 4rem;
+  }
+
+  #diferenciais__codigo .diferenciais__img {
+    grid-row: 2;
+  }
 }

@@ -1,0 +1,111 @@
+.depo {
+  padding: 4rem 100px;
+  font-family: "Saira", sans-serif;
+}
+
+.depo-main {
+  background-color: var(--c3);
+  border-radius: 32px;
+  display: flex;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.depo-main img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.depo-txt {
+  margin-left: 4rem;
+  position: relative;
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.depo-txt span {
+  position: absolute;
+  font-style: italic;
+  margin-left: -4rem;
+  margin-top: -3rem;
+  font-weight: 700;
+  font-size: 100px;
+  color: #ebe7e1;
+
+  opacity: 0.5;
+}
+
+.depo p {
+  font-weight: 500;
+  line-height: 120%;
+
+  color: #ebe7e1;
+}
+
+.depo-nome {
+  font-weight: 700 !important;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  color: var(--c2) !important;
+}
+
+.depo-prof {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--c2) !important;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .depo {
+    padding: 4rem 20px;
+  }
+
+  .depo-main {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .depo-txt {
+    margin-left: 0rem;
+    display: block;
+    font-size: 1.125rem;
+    padding: 0 2rem;
+  }
+
+  .depo-txt span {
+    position: absolute;
+    font-style: italic;
+    margin-left: -4rem;
+    margin-top: -3rem;
+    font-weight: 700;
+    font-size: 100px;
+    color: #ebe7e1;
+
+    opacity: 0.5;
+  }
+
+  .depo p {
+    font-weight: 500;
+    line-height: 120%;
+
+    color: #ebe7e1;
+  }
+
+  .depo-nome {
+    font-weight: 700 !important;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+    color: var(--c2) !important;
+  }
+
+  .depo-prof {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--c2) !important;
+    font-weight: 300;
+  }
+}

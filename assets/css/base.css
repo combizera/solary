@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --bg: #ebe7e1;
   --c0: #faf8f5;
   --c1: #b0b0b0;
   --c2: #707070;
   --c3: #404040;
+  --corDest: #7f62f4;
 
   --gap0: 0px;
   --gap1: 8px;
@@ -27,6 +29,60 @@ body {
   width: 100%;
 }
 
+/* Cor de seleção do texto */
+
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection,
+label::-moz-selection,
+span::-moz-selection,
+strong::-moz-selection,
+br::-moz-selection,
+p::-moz-selection {
+  background-color: #7f62f4;
+  color: #ebe7e1;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+label::selection,
+span::selection,
+strong::selection,
+br::selection,
+p::selection {
+  background-color: #7f62f4;
+  color: #ebe7e1;
+}
+
+/* Estilização da barra de scroll */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ebe7e1 #404040;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #404040;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #ebe7e1;
+  border-radius: 20px;
+  border: 3px solid #404040;
+}
+
 h1,
 h2,
 h3,
@@ -39,6 +95,25 @@ ul {
   margin-block-end: 0px;
   line-height: 100%;
   padding-inline-start: 0px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 3.5rem;
+
+  color: var(--c3);
+  display: flex;
+  justify-content: center;
+}
+
+h6 {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  /* identical to box height, or 125% */
+
+  color: #7f62f4;
 }
 
 ul {
@@ -58,14 +133,12 @@ img {
 .container {
   max-width: 1220px;
   margin: 0 auto;
-  border: 2px solid green;
 }
 
 @media (max-width: 800px) {
   .container {
     max-width: 1220px;
     margin: 0 auto;
-    border: 2px solid green;
   }
 }
 
@@ -141,22 +214,12 @@ img {
   }
 
   .sec__tit {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    font-family: "Saira", sans-serif;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .sec__tit h2 {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 70px;
-
-    color: var(--c3);
-  }
-
-  .sec__tit p {
-    font-weight: 300;
-    color: var(--c1);
+    line-height: 100%;
+    margin-bottom: 1rem;
   }
 }

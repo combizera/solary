@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tl
     // cabecalho
-    .from(".logo", {
+    .from(".header-1", {
       duration: 1,
       opacity: 0,
       y: 50,
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power3.out",
     });
   tl.from(
-    ".header1",
+    ".header-2",
     {
       duration: 1,
       opacity: 0,
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "-=0.8"
   );
   tl.from(
-    ".header2",
+    ".header-logo",
     {
       duration: 1,
       opacity: 0,
@@ -31,17 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
     "-=0.8"
   );
   tl.from(
-    ".header3",
+    ".header-3",
     {
       duration: 1,
       opacity: 0,
       ease: "power3.out",
       y: 50,
     },
-    "-=0.8"
+    "-=0.5"
   );
   tl.from(
-    ".header4",
+    ".header-4",
     {
       duration: 1,
       opacity: 0,
@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "-=0.8"
   );
-  // antes do bg__hero é preciso mexer naquela imagem
   tl.from(
     ".bg__hero",
     {
@@ -129,6 +128,62 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  // Diferenciais
+  gsap.from("#diferenciais h4", {
+    duration: 2,
+    delay: 0.2,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#diferenciais ",
+    },
+  });
+
+  gsap.from("#diferenciais__responsivo .diferenciais__txt", {
+    duration: 1,
+    delay: 1,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#diferenciais__responsivo",
+    },
+  });
+
+  gsap.from("#diferenciais__responsivo .diferenciais__img", {
+    duration: 1,
+    delay: 1.4,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#diferenciais__responsivo",
+    },
+  });
+
+  gsap.from("#diferenciais__codigo .diferenciais__txt", {
+    duration: 1,
+    delay: 1,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#diferenciais__codigo",
+    },
+  });
+
+  gsap.from("#diferenciais__codigo .diferenciais__img", {
+    duration: 1,
+    delay: 1.4,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#diferenciais__codigo",
+    },
+  });
+
   // Números
   gsap.registerPlugin(ScrollTrigger);
   gsap.from("#numeros", {
@@ -154,9 +209,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Portfólio
   gsap.registerPlugin(ScrollTrigger);
-  gsap.from("#portfolio .sec__tit", {
-    duration: 1.5,
-    delay: 1,
+  gsap.from("#portfolio h2", {
+    duration: 1,
     y: 300,
     opacity: 0,
     ease: "power3.out",
@@ -165,9 +219,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  gsap.from(".port__itens div", {
+  gsap.from("#portfolio p", {
     duration: 1,
-    delay: 2,
+    delay: 0.3,
     y: 300,
     opacity: 0,
     stagger: { each: 0.3 },
@@ -177,50 +231,141 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  // Feedback
+  gsap.from("#portfolio .port-item1", {
+    duration: 1,
+    delay: 1,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#portfolio .port-grid",
+    },
+  });
+
+  gsap.from("#portfolio .port-item2", {
+    duration: 1,
+    delay: 1.3,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#portfolio .port-grid",
+    },
+  });
+
+  gsap.from("#portfolio .port-item3", {
+    duration: 1,
+    delay: 0.2,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#portfolio .port-item3",
+    },
+  });
+
+  gsap.from("#portfolio .port-item4", {
+    duration: 1,
+    delay: 0.6,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#portfolio .port-item3",
+    },
+  });
+
+  // Depoimentos
   gsap.registerPlugin(ScrollTrigger);
-  gsap.from(".feed__img", {
-    duration: 1.5,
+  gsap.from(".depo h4", {
+    duration: 1,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".depo",
+    },
+  });
+
+  gsap.from(".depo-main", {
+    duration: 1,
+    delay: 0.3,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".depo-main",
+    },
+  });
+
+  gsap.from(".swiper-slide img", {
+    duration: 1,
     delay: 0.5,
-
-    x: -600,
-    opacity: 0,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#feedback",
-    },
-  });
-
-  gsap.from(".feed__tit", {
-    duration: 1,
-    delay: 0.7,
     y: 300,
     opacity: 0,
     ease: "power3.out",
     scrollTrigger: {
-      trigger: "#feedback",
+      trigger: ".depo-main",
     },
   });
 
-  gsap.from(".feed__depo", {
+  gsap.from(".swiper-slide .depo-txt", {
     duration: 1,
-    delay: 0.9,
+    delay: 1,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".depo-main",
+    },
+  });
+
+  // Footer
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.from(".footer-logo", {
+    duration: 1,
     y: 300,
     opacity: 0,
     ease: "power3.out",
     scrollTrigger: {
-      trigger: "#feedback",
+      trigger: "footer",
     },
   });
-
-  gsap.from(".feed__pessoa", {
+  gsap.from(".footer-email", {
     duration: 1,
-    delay: 1.1,
+    delay: 0.4,
     y: 300,
     opacity: 0,
     ease: "power3.out",
     scrollTrigger: {
-      trigger: "#feedback",
+      trigger: "footer",
+    },
+  });
+  gsap.from(".footer-social img", {
+    duration: 1,
+    delay: 0.4,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    stagger: { each: 0.3 },
+    scrollTrigger: {
+      trigger: "footer",
+    },
+  });
+  gsap.from(".footer-cnpj", {
+    duration: 1,
+    delay: 1.4,
+    y: 300,
+    opacity: 0,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "footer",
     },
   });
 });

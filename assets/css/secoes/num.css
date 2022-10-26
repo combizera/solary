@@ -42,8 +42,24 @@
 }
 
 @media (max-width: 800px) {
-  .num {
-    background-color: var(--c3);
-    display: none;
+  .num__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem 20px;
+    justify-items: center;
+    gap: 4rem;
+  }
+
+  .num__txt {
+    align-items: center;
+  }
+
+  .num__item {
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+  }
+
+  .num__p {
+    text-align: center;
   }
 }

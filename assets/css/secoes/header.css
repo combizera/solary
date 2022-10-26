@@ -1,72 +1,66 @@
 header {
+  padding: 0.5rem 80px;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+
+  color: #404040;
+}
+
+.header-left a,
+.header-right a {
+  /* background-color: tomato; */
+  padding: 8px 16px;
+  position: relative;
+  display: inline-flex;
+}
+
+.header-left a::after,
+.header-right a::after {
+  content: "";
+  width: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 3px;
+
+  background: linear-gradient(180deg, #7f62f4 0%, #7f44f4 100%);
+  transition: 0.2s ease;
+}
+
+.header-left a:hover::after,
+.header-right a:hover::after {
+  animation: risco 0.5s ease forwards;
+}
+
+@keyframes risco {
+  0% {
+    width: 0;
+    transform: translate(10px, 16px);
+  }
+  60% {
+    width: 5%;
+    transform: translate(10px, 16px);
+  }
+  100% {
+    width: 85%;
+    transform: translate(10px, 16px);
+  }
+}
+
+.header-bloco {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 80px;
-  color: var(--c2);
-  font-family: "Mukta", sans-serif;
-}
-
-.header__nav {
-  margin: auto 0;
-}
-
-.header__nav ul {
-  display: flex;
-  gap: var(--gap3);
-}
-
-.header__nav a {
-  transition: 0.3s;
-  position: relative;
-}
-
-.header__nav a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0%;
-  background-color: var(--c2);
-  margin-top: 4px;
-  transition: 0.4s;
-}
-
-.header__nav a:hover:after {
-  width: 100%;
-  position: absolute;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
-  header {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0.5rem 20px;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--gap2);
-  }
-  .header__nav {
-    margin: auto 0;
-  }
-
-  .header__nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap2);
-    justify-content: center;
-  }
-
-  .header__nav a {
-    background-color: var(--c0);
-    border-radius: 16px;
-    padding: var(--gap2);
-    display: inline-block;
-  }
-
-  .header__nav a:hover {
-    background-color: var(--c1);
-  }
-
-  .header__nav a::after {
+  .header-left a,
+  .header-right a {
     display: none;
+  }
+  header {
+    padding: 40px 80px;
   }
 }
