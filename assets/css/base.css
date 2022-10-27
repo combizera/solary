@@ -133,6 +133,7 @@ img {
 .container {
   max-width: 1220px;
   margin: 0 auto;
+  border: 2px solid red;
 }
 
 @media (max-width: 800px) {

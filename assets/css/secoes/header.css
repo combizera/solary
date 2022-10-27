@@ -5,7 +5,8 @@ header {
   font-size: 1.125rem;
   text-transform: uppercase;
 
-  color: #404040;
+  color: var(--c3);
+  padding-top: 2rem;
 }
 
 .header-left a,
