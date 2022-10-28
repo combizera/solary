@@ -1,0 +1,55 @@
+.cta {
+  font-family: "Saira", sans-serif;
+  padding: 80px 60px;
+}
+
+.cta h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+
+  color: var(--c3);
+  padding-bottom: 40px;
+}
+
+.cta p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 130%;
+  text-align: center;
+  color: var(--c2);
+}
+
+.cta-email {
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+
+  color: var(--c1);
+  display: block;
+  margin: 40px 0;
+  transition: 0.3s;
+}
+
+.cta-email:hover {
+  color: var(--c2);
+  text-decoration: underline;
+}
+
+.cta-cta {
+  color: var(--c2);
+}
+
+@media (max-width: 800px) {
+  .cta {
+    padding: 80px 20px;
+  }
+
+  .cta h2 {
+    font-size: 2.5rem;
+  }
+
+  .cta-email {
+    font-size: 1.75rem;
+  }
+}
