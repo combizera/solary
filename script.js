@@ -275,56 +275,112 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: { each: 0.3 },
     ease: "power3.out",
     scrollTrigger: {
-      trigger: "#portfolio .port-item3",
+      trigger: "#portfolio .port-item4",
     },
   });
 
-  // Depoimentos
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.from(".depo h4", {
+  gsap.from("#portfolio .port-item5", {
     duration: 1,
+    delay: 0.6,
+    y: 300,
+    opacity: 0,
+    stagger: { each: 0.3 },
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#portfolio .port-item5",
+    },
+  });
+
+  // Formulário
+  gsap.from("#formulario h2", {
+    duration: 1.5,
     y: 300,
     opacity: 0,
     ease: "power3.out",
     scrollTrigger: {
-      trigger: ".depo",
+      trigger: "#formulario",
     },
   });
 
-  gsap.from(".depo-main", {
-    duration: 1,
+  gsap.from("#formulario p", {
+    duration: 1.5,
     delay: 0.3,
     y: 300,
     opacity: 0,
-    stagger: { each: 0.3 },
     ease: "power3.out",
     scrollTrigger: {
-      trigger: ".depo-main",
+      trigger: "#formulario",
     },
   });
 
-  gsap.from(".swiper-slide img", {
-    duration: 1,
-    delay: 0.5,
+  gsap.from("#formulario .cta-email", {
+    duration: 1.5,
+    delay: 0.6,
     y: 300,
     opacity: 0,
     ease: "power3.out",
     scrollTrigger: {
-      trigger: ".depo-main",
+      trigger: "#formulario",
     },
   });
 
-  gsap.from(".swiper-slide .depo-txt", {
+  gsap.from("#formulario .btn__pri", {
     duration: 1,
-    delay: 1,
+    delay: 1.5,
     y: 300,
     opacity: 0,
-    stagger: { each: 0.3 },
     ease: "power3.out",
     scrollTrigger: {
-      trigger: ".depo-main",
+      trigger: "#formulario",
     },
   });
+
+  // // Depoimentos
+  // gsap.registerPlugin(ScrollTrigger);
+  // gsap.from(".depo h4", {
+  //   duration: 1,
+  //   y: 300,
+  //   opacity: 0,
+  //   ease: "power3.out",
+  //   scrollTrigger: {
+  //     trigger: ".depo",
+  //   },
+  // });
+
+  // gsap.from(".depo-main", {
+  //   duration: 1,
+  //   delay: 0.3,
+  //   y: 300,
+  //   opacity: 0,
+  //   stagger: { each: 0.3 },
+  //   ease: "power3.out",
+  //   scrollTrigger: {
+  //     trigger: ".depo-main",
+  //   },
+  // });
+
+  // gsap.from(".swiper-slide img", {
+  //   duration: 1,
+  //   delay: 0.5,
+  //   y: 300,
+  //   opacity: 0,
+  //   ease: "power3.out",
+  //   scrollTrigger: {
+  //     trigger: ".depo-main",
+  //   },
+  // });
+
+  // gsap.from(".swiper-slide .depo-txt", {
+  //   duration: 1,
+  //   delay: 1,
+  //   y: 300,
+  //   opacity: 0,
+  //   stagger: { each: 0.3 },
+  //   ease: "power3.out",
+  //   scrollTrigger: {
+  //     trigger: ".depo-main",
+  //   },
+  // });
 
   // Footer
   gsap.registerPlugin(ScrollTrigger);
