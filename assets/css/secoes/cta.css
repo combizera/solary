@@ -1,6 +1,9 @@
 .cta {
   font-family: "Saira", sans-serif;
   padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cta h2 {

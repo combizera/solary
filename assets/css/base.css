@@ -30,6 +30,11 @@ body {
   width: 100%;
 }
 
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Cor de seleção do texto */
 
 h1::-moz-selection,
@@ -83,6 +88,8 @@ p::selection {
   border-radius: 20px;
   border: 3px solid #404040;
 }
+
+/* Fim da Estilização da barra de scroll */
 
 h1,
 h2,
