@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - main
+    pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+name: Deploy Solary
+jobs:
+  web-deploy:
+    name: deploy
+    runs-on: ubunto-latest
+    steps:
+      - name: get latest code
+        uses: actions/checkoutv2
+
+        - name: sync files
+        uses: aa
+        with:
+          server: ${{ secrets.ftp.host }}
+          username: ${{ secrets.ftp.user }}
+          password: ${{ secrets.ftp.password }}
+          server-dir: public_html/solary/
