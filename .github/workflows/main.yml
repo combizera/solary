@@ -2,10 +2,6 @@ on:
   push:
     branches:
       - main
-    pull_request:
-    branches:
-      - main
-  workflow_dispatch:
 name: Deploy Solary
 jobs:
   web-deploy:
@@ -13,12 +9,12 @@ jobs:
     runs-on: ubunto-latest
     steps:
       - name: get latest code
-        uses: actions/checkoutv2
+        uses: actions/checkout@v2
 
         - name: sync files
-        uses: aa
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.ftp.host }}
           username: ${{ secrets.ftp.user }}
           password: ${{ secrets.ftp.password }}
-          server-dir: public_html/solary/
+          server-dir: public_html/
