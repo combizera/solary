@@ -17,4 +17,4 @@ jobs:
           server: ${{ secrets.ftp.host }}
           username: ${{ secrets.ftp.user }}
           password: ${{ secrets.ftp.password }}
-          server-dir: public_html/solary/
+          server-dir: public_html/
