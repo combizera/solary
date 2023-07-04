@@ -13,5 +13,5 @@ function calcular() {
     valor = 2400 + 600 + 600 + Math.floor(excedente / 1000) * 50;
   }
 
-  document.getElementById('resultado').textContent = 'Valor a receber: R$ ' + valor.toFixed(2);
+  document.getElementById('valor').textContent = 'R$ ' + valor.toFixed(2);
 }

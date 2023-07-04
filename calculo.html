@@ -62,11 +62,13 @@
   </header>
   <main>
     <div class="container calculo">
-      <h1>Calculadora de Pontuação</h1>
-      <label for="pontos">Digite a quantidade de pontos:</label>
-      <input type="number" id="pontos" min="0">
-      <button onclick="calcular()">Calcular</button>
-      <div id="resultado"></div>
+      <h1>Calculadora de Pontuação | ADVBOX</h1>
+      <label for="pontos">Digite a quantidade de pontos feitos nesse mês:</label>
+      <div>
+        <input type="number" id="pontos" min="0">
+        <button onclick="calcular()">Calcular</button>
+      </div>
+      <div id="resultado">Valor a receber: <span id="valor"></span></div>
     </div>
   </main>
 
