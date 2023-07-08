@@ -1,17 +1,17 @@
 /* Base */
-@import url("./base");
-@import url("./elements/base/header");
-@import url("./elements/base/footer");
-@import url("./elements/base/swiper");
+@import "./base";
+@import "./elements/base/header";
+@import "./elements/base/footer";
+@import "./elements/base/swiper";
 
 // SVGS
-@import url("./elements/svgs/svgs-keyframes");
-@import url("./elements/svgs/svgs");
+@import "./elements/svgs/svgs-keyframes";
+@import "./elements/svgs/svgs";
 
 // HOME
-@import url("./elements/secoes/home/depo");
-@import url("./elements/secoes/home/cta");
-@import url("./elements/secoes/home/port");
+@import "./elements/secoes/home/depo";
+@import "./elements/secoes/home/cta";
+@import "./elements/secoes/home/port";
 
 // INC
-@import url("./elements/secoes/inc/calculo");
+@import "./elements/secoes/inc/calculo";
