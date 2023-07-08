@@ -27,5 +27,26 @@ document.getElementById("metricsForm").addEventListener("submit", function(event
   reportText += "MQL's - " + mqlsPartial + "\n";
 
   // Exibir o relatório gerado
-  document.getElementById("report").textContent = reportText;
+  var reportElement = document.getElementById("report");
+  reportElement.textContent = reportText;
+
+  // Adicionar destaque
+  reportElement.classList.add("highlight");
+
+  // Adicionar botão de cópia
+  var copyButton = document.createElement("button");
+  copyButton.textContent = "Copiar";
+  copyButton.setAttribute("data-clipboard-target", "#report");
+  reportElement.appendChild(copyButton);
+
+  // Inicializar o Clipboard.js
+  new ClipboardJS(copyButton);
+
+  // Adicionar evento de feedback após a cópia
+  copyButton.addEventListener("click", function() {
+    copyButton.textContent = "Copiado!";
+    setTimeout(function() {
+      copyButton.textContent = "Copiar";
+    }, 1500);
+  });
 });

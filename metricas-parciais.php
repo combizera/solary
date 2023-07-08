@@ -35,6 +35,7 @@ get_header(); ?>
 
     <div id="report"></div>
   </section>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/metricas.js"></script>
 </main>
 
 <!-- Para pegar o Footer -->
