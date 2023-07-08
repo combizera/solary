@@ -88,7 +88,6 @@
 h2 {
   font-weight: 700;
   text-transform: uppercase;
-  margin: 20px 0 35px 0;
   @include typeface-1(h2, desktop);
   @include responsive(s) {
     @include typeface-1(h2, mobile);
@@ -142,5 +141,53 @@ a {
   @include typeface-1(a1, desktop);
   @include responsive(s) {
     @include typeface-1(a1, mobile);
+  }
+}
+
+// BOTÕES
+.btn__pri {
+  padding: 10px 20px;
+  gap: 8px;
+
+  background: var(--c0);
+
+  box-shadow: 0px 4px 20px -10px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.btn__pri:hover {
+  box-shadow: 0px 61px 106px rgba(0, 0, 0, 0.23),
+    0px 18.3897px 31.9559px rgba(0, 0, 0, 0.149865),
+    0px 2.76257px 4.80053px rgba(0, 0, 0, 0.0801346);
+}
+
+.btn__sec {
+  padding: 10px 20px;
+
+  border: 2px solid var(--c0);
+  box-shadow: 0px 4px 25px -10px rgba(0, 0, 0, 0.5);
+  background-color: var(--bg);
+  transition: 0.4s;
+  text-align: center;
+}
+
+.btn__sec:hover {
+  box-shadow: 0px 61px 106px rgba(0, 0, 0, 0.23),
+    0px 18.3897px 31.9559px rgba(0, 0, 0, 0.149865),
+    0px 2.76257px 4.80053px rgba(0, 0, 0, 0.0801346);
+  background-color: var(--c0);
+}
+
+@include responsive(s){
+  .btn__pri {
+    padding: 10px 16px;
+    width: 100%;
+  }
+
+  .btn__sec {
+    padding: 10px 16px;
+    width: 100%;
   }
 }
