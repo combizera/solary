@@ -32,14 +32,49 @@ button[type="submit"]:hover {
 #report {
   white-space: pre-line;
   font-family: 'Saira', sans-serif;
-  margin-top: 20px;
-  border: 1px solid #ccc;
-  padding: 10px;
+  margin: 20px 200px;
+  // border: 1px solid #ccc;
+  padding: 20px;
 }
 
 .highlight {
-  background-color: #f5f5f5;
-  border-left: 5px solid #007bff;
+  background-color: #f8f8f8;
+  border: 1px solid #e6e6e6;
   padding: 10px;
   margin-top: 20px;
+  position: relative;
+}
+
+.highlight .copy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.highlight .copy-button:hover {
+  background-color: #0056b3;
+}
+
+.highlight .copy-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M21 7V5h-2v2h-2V5h-2v2h-2V5h-2v2H9V5H7v2H5V5H3v2H2v16h20V7h-2zm-2 14H4V9h3v2h2V9h6v2h2V9h2v12zM9 19v-2h6v2H9zM9 15v-2h6v2H9zm0-4V9h6v2H9zm8 4v-2h2v2h-2zm0-4v-2h2v2h-2zm0-4V9h2v2h-2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.highlight .copy-icon:hover {
+  opacity: 1;
 }

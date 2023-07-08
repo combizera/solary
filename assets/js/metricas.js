@@ -33,10 +33,17 @@ document.getElementById("metricsForm").addEventListener("submit", function(event
   // Adicionar destaque
   reportElement.classList.add("highlight");
 
-  // Adicionar botão de cópia
+  // Criar botão de cópia
   var copyButton = document.createElement("button");
-  copyButton.textContent = "Copiar";
+  copyButton.classList.add("copy-button");
   copyButton.setAttribute("data-clipboard-target", "#report");
+
+  // Criar ícone de colar
+  var copyIcon = document.createElement("span");
+  copyIcon.classList.add("copy-icon");
+  copyButton.appendChild(copyIcon);
+
+  // Adicionar botão ao relatório
   reportElement.appendChild(copyButton);
 
   // Inicializar o Clipboard.js
