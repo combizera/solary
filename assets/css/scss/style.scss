@@ -1,21 +1,17 @@
 /* Base */
 @import url("./base");
 @import url("./elements/base/header");
-// @import url("./svgs.css");
-// @import url("./svgs-keyframes.css");
-// @import url("./swiper.css");
+@import url("./elements/base/footer");
+@import url("./elements/base/swiper");
 
-/* Seções */
-// @import url("./../css/secoes/header.css");
-// @import url("./../css/secoes/hero.css");
-// @import url("./../css/secoes/meto.css");
-// @import url("./../css/secoes/step.css");
-// @import url("./../css/secoes/num.css");
-// @import url("./../css/secoes/port.css");
-// @import url("./../css/secoes/cta.css");
-// @import url("./../css/secoes/depo.css");
-// @import url("./../css/secoes/diferenciais.css");
-// @import url("./../css/secoes/footer.css");
-// @import url("./../css/secoes/projetos.css");
-// @import url("./../css/secoes/calculo.css");
-// @import url("./../css/secoes/metricas-parciais.css");
+// SVGS
+@import url("./elements/svgs/svgs-keyframes");
+@import url("./elements/svgs/svgs");
+
+// HOME
+@import url("./elements/secoes/home/depo");
+@import url("./elements/secoes/home/cta");
+@import url("./elements/secoes/home/port");
+
+// INC
+@import url("./elements/secoes/inc/calculo");
