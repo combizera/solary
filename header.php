@@ -59,7 +59,7 @@
       </div>
       <div class="header-logo">
         <a href="#">
-          <img src="./assets/img/icon/log.svg" alt="Ícone Solary"></a>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/log.svg" alt="Ícone Solary"></a>
       </div>
       <div class="header-right">
         <a target="_blank" href="https://forms.gle/vWMG9GMsxZWfwRJ88">

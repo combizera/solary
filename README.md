@@ -25,7 +25,7 @@ Regular e Bold
 <footer>
   <div class="footer-bg container">
     <div class="footer-logo">
-      <a href="#"><img src="./assets/img/icon/svgs/logo-footer.svg" alt="Logotipo Solary"></a>
+      <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/svgs/logo-footer.svg" alt="Logotipo Solary"></a>
     </div>
     <div class="footer-left">
       <div class="footer-contato">
@@ -34,9 +34,9 @@ Regular e Bold
       </div>
       <div class="footer-sociais">
         <p class="footer-tit">Sociais</p>
-        <a href="#"><img src="./assets/img/icon/svgs/soc-zap.svg" alt=""></a>
-        <a href="#"><img src="./assets/img/icon/svgs/soc-ig.svg" alt=""></a>
-        <a href="#"><img src="./assets/img/icon/svgs/soc-be.svg" alt=""></a>
+        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/svgs/soc-zap.svg" alt=""></a>
+        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/svgs/soc-ig.svg" alt=""></a>
+        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/svgs/soc-be.svg" alt=""></a>
       </div>
     </div>
 

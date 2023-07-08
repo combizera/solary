@@ -95,7 +95,7 @@ get_header(); ?>
           <ul class="meto__grid">
             <li>
               <p class="meto__num">01</p>
-              <div class="meto__icon borda"><img src="./assets/img/icon/meto1.svg" alt="Ícone de"></div>
+              <div class="meto__icon borda"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/meto1.svg" alt="Ícone de"></div>
               <div class="meto__txt">
                 <h3>Briefing</h3>
                 <p>Reunião para entender quais os problemas do cliente, com base nessas informações, começar a elaborar soluções para resolver o problema.</p>
@@ -103,7 +103,7 @@ get_header(); ?>
             </li>
             <li>
               <p class="meto__num">02</p>
-              <div class="meto__icon borda"><img src="./assets/img/icon/meto2.svg" alt="Ícone de"></div>
+              <div class="meto__icon borda"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/meto2.svg" alt="Ícone de"></div>
               <div class="meto__txt">
                 <h3>Planejamento</h3>
                 <p>Definir plataforma de trabalho. Wireframe de baixa fidelidade. Estruturar os primeiros layouts do projeto. Quando o cliente aprovar seguimos.</p>
@@ -111,7 +111,7 @@ get_header(); ?>
             </li>
             <li>
               <p class="meto__num">03</p>
-              <div class="meto__icon borda"><img src="./assets/img/icon/meto3.svg" alt="Ícone de"></div>
+              <div class="meto__icon borda"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/meto3.svg" alt="Ícone de"></div>
               <div class="meto__txt">
                 <h3>Criação</h3>
                 <p>Após o OK, é hora de começar a codificar o layout produzido, dando vida ao site. Realizar polimentos finais. Correção de BUGs.</p>
@@ -119,7 +119,7 @@ get_header(); ?>
             </li>
             <li>
               <p class="meto__num">04</p>
-              <div class="meto__icon borda"><img src="./assets/img/icon/meto4.svg" alt="Ícone de"></div>
+              <div class="meto__icon borda"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/meto4.svg" alt="Ícone de"></div>
               <div class="meto__txt">
                 <h3>Lançamento</h3>
                 <p>Tudo perfeito, é hora de lançar!Avise seu público sobre o novo site. Nosso trabalho não acaba aqui, seguimos monitorando o desempenho do site.</p>
@@ -322,21 +322,21 @@ get_header(); ?>
   <article id="numeros" class="num">
     <div class="num__grid container">
       <div class="num__item">
-        <img src="./assets/img/icon/num1.svg" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/num1.svg" alt="">
         <div class="num__txt">
           <p class="num__dest">+40</p>
           <p class="num__p">clientes satisfeitos</p>
         </div>
       </div>
       <div class="num__item">
-        <img src="./assets/img/icon/num2.svg" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/num2.svg" alt="">
         <div class="num__txt">
           <p class="num__dest">+513</p>
           <p class="num__p">mil linhas de código programado</p>
         </div>
       </div>
       <div class="num__item">
-        <img src="./assets/img/icon/num3.svg" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/num3.svg" alt="">
         <div class="num__txt">
           <p class="num__dest">289</p>
           <p class="num__p">litros de café consumido</p>
@@ -357,7 +357,7 @@ get_header(); ?>
         <!-- ROCCIA -->
         <div class="port-item1">
           <a target="_blank" href="./projetos/roccia">
-            <img src="./assets/img/projetos/roccia/roccia.webp" alt="Projeto Roccia Cafés Especiais">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/projetos/roccia/roccia.webp" alt="Projeto Roccia Cafés Especiais">
             <div class="port-txt">
               <h6>Roccia Cafés Especiais</h6>
               <p>Identidade Visual & Packing</p>
@@ -368,7 +368,7 @@ get_header(); ?>
         <!-- KLEBERSON -->
         <div class="port-item2">
           <a target="_blank" href="./projetos/kleberson-dos-santos">
-            <img src="./assets/img/projetos/kleberson/logo-capa.webp" alt="Projeto Kleberson dos Santos">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/projetos/kleberson/logo-capa.webp" alt="Projeto Kleberson dos Santos">
             <div class="port-txt">
               <h6>Kleberson dos Santos</h6>
               <p>Website & Identidade Visual</p>
@@ -379,7 +379,7 @@ get_header(); ?>
         <!-- FLAVIO MACIEL -->
         <div class="port-item3">
           <a target="_blank" href="./projetos/flavio-maciel.html">
-            <img src="./assets/img/flavioadv.webp" alt="Projeto Flavio Maciel">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/flavioadv.webp" alt="Projeto Flavio Maciel">
             <div class="port-txt">
               <h6>Escritório Flavio Maciel</h6>
               <p>Website & Landing Page</p>
@@ -390,7 +390,7 @@ get_header(); ?>
         <!-- BORTOLUZZI antes wp -->
         <div class="port-item4">
           <a target="_blank" href="./projetos/bortoluzzi">
-            <img src="./assets/img/bortoluzzi.webp" alt="Projeto Bortoluzzi Advocacia">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/bortoluzzi.webp" alt="Projeto Bortoluzzi Advocacia">
             <div class="port-txt">
               <h6>Bortoluzzi Advocacia</h6>
               <p>Website & Blog</p>
@@ -401,7 +401,7 @@ get_header(); ?>
         <!-- UAI BLEND -->
         <div class="port-item5">
           <a target="_blank" href="./projetos/uai-blend">
-            <img src="./assets/img/projetos/uai blend/uai-blend-logo.webp" alt="Projeto Uai Blend">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/projetos/uai blend/uai-blend-logo.webp" alt="Projeto Uai Blend">
             <div class="port-txt">
               <h6>Uai Blend</h6>
               <p>Identidade Visual & Naming</p>
@@ -412,7 +412,7 @@ get_header(); ?>
         <!-- PAIN -->
         <div class="port-item6">
           <a target="_blank" href="./projetos/pain.html">
-            <img src="./assets/img/paiN.webp" alt="Projeto paiN Gaming">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/paiN.webp" alt="Projeto paiN Gaming">
             <div class="port-txt">
               <h6>paiN 2015</h6>
               <p>Website</p>

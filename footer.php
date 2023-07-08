@@ -1,12 +1,12 @@
 <!-- FOOTER -->
 <footer class="container">
-  <div class="footer-logo"><img src="./assets/img/icon/log.svg" alt="Ícone Solary"></div>
+  <div class="footer-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/log.svg" alt="Ícone Solary"></div>
   <div class="footer-dados">
     <a href="mailto:ola@agenciasolary.com.br" class="footer-email">ola@agenciasolary.com.br</a>
     <div class="footer-social">
-      <a target="_blank" href="https://wa.me/5553999902079"> <img loading="lazy" src="./assets/img/icon/svgs/soc-zap.svg" alt="Whatsapp da Solary"></a>
-      <a target="_blank" href="https://instagram.com/agenciasolary"> <img loading="lazy" src="./assets/img/icon/svgs/soc-ig.svg" alt="Instagram da Solary"></a>
-      <a target="_blank" href="https://www.behance.net/combizera"> <img loading="lazy" src="./assets/img/icon/svgs/soc-be.svg" alt="Behance da Solary" id="behance"></a>
+      <a target="_blank" href="https://wa.me/5553999902079"> <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/svgs/soc-zap.svg" alt="Whatsapp da Solary"></a>
+      <a target="_blank" href="https://instagram.com/agenciasolary"> <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/svgs/soc-ig.svg" alt="Instagram da Solary"></a>
+      <a target="_blank" href="https://www.behance.net/combizera"> <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon/svgs/soc-be.svg" alt="Behance da Solary" id="behance"></a>
     </div>
     <p class="footer-cnpj">CNPJ: 47.409.055/0001-13</p>
   </div>
