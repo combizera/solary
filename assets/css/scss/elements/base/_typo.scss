@@ -1,0 +1,146 @@
+// Tipografias
+// Saira
+@mixin typeface-1($size, $device: desktop) {
+  font-family: "Saira", sans-serif;
+
+  // h1
+  @if $size == h1 and $device == desktop {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  // H2
+  @if $size == h2 and $device == desktop {
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 1.15rem;
+    line-height: 2.125rem;
+  }
+
+  // H3
+  @else if $size == h3 and $device == desktop {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  } @else if $size == h3 and $device == mobile {
+    // font-size: 24px;
+    // line-height: 120%;
+  }
+
+  // H4
+  @else if $size == h4 and $device == desktop {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  } @else if $size == h4 and $device == mobile {
+    // font-size: 22px;
+    // line-height: 120%;
+  }
+
+  // H5
+  @else if $size == h5 and $device == desktop {
+    font-size: 1rem;
+    line-height: 2rem;
+  } @else if $size == h5 and $device == mobile {
+    // font-size: 22px;
+    // line-height: 120%;
+  }
+
+  // H6
+  @else if $size == h6 and $device == desktop {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  } @else if $size == h6 and $device == mobile {
+    font-size: 1.875rem;
+    line-height: 2.125rem;
+  }
+
+  // p
+  @else if $size == p and $device == desktop {
+    font-size: 1.25rem;
+    line-height: 200%;
+  } @else if $size == p and $device == mobile {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+
+  // a
+  @else if $size == a1 and $device == desktop {
+    font-size: 1.25rem;
+    line-height: 100%;
+  } @else if $size == a1 and $device == mobile {
+    font-size: 1.25rem;
+    line-height: 100%;
+  }
+}
+
+.h1 {
+  text-align: center;
+  font-weight: 300;
+  @include typeface-1(h1, desktop);
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+}
+
+h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0 35px 0;
+  @include typeface-1(h2, desktop);
+  @include responsive(s) {
+    @include typeface-1(h2, mobile);
+  }
+}
+
+h3 {
+  font-weight: 700;
+  // text-transform: uppercase;
+  @include typeface-1(h3, desktop);
+  @include responsive(s) {
+    @include typeface-1(h3, mobile);
+  }
+}
+
+h4 {
+  font-weight: 700;
+  @include typeface-1(h4, desktop);
+  @include responsive(s) {
+    @include typeface-1(h4, mobile);
+  }
+}
+
+h5 {
+  font-weight: 700;
+  @include typeface-1(h5, desktop);
+  @include responsive(s) {
+    @include typeface-1(h5, mobile);
+  }
+}
+
+h6 {
+  font-weight: 700;
+  position: relative;
+  z-index: 10;
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
+  }
+}
+
+p {
+  font-weight: 400;
+  @include typeface-1(p, desktop);
+  @include responsive(s) {
+    @include typeface-1(p, mobile);
+  }
+}
+
+a {
+  @include typeface-1(a1, desktop);
+  @include responsive(s) {
+    @include typeface-1(a1, mobile);
+  }
+}

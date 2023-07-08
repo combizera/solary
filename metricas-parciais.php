@@ -7,7 +7,7 @@ get_header(); ?>
 <main id="page-metricas-parciais">
   <section id="metricas-parciais" class="container">
 
-    <h1>Relatório de Métricas</h1>
+    <h1 class="h1">Relatório de Métricas</h1>
 
     <form id="metricsForm">
       <label for="opportunities">Oportunidades:</label>
