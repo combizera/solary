@@ -3,7 +3,7 @@
 // Template name: Página Home
 get_header(); ?>
 
-<main>
+<main id="page-home">
   <!-- HERO -->
   <div class="relative">
     <div class="bg__hero">
