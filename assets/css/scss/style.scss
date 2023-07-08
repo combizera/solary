@@ -9,9 +9,14 @@
 @import "./elements/svgs/svgs";
 
 // HOME
+@import "./elements/secoes/home/hero";
 @import "./elements/secoes/home/depo";
 @import "./elements/secoes/home/cta";
 @import "./elements/secoes/home/port";
+@import "./elements/secoes/home/diferenciais";
+@import "./elements/secoes/home/meto";
+@import "./elements/secoes/home/num";
 
 // INC
 @import "./elements/secoes/inc/calculo";
+@import "./elements/secoes/inc/metricas-parciais";
