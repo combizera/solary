@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
     "swiper": "^8.3.2"
+  },
+  "devDependencies": {
+    "sass": "^1.63.6"
   }
 }
