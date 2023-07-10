@@ -14,7 +14,6 @@ get_header(); ?>
           <input type="number" id="opportunities" name="opportunities" required><br>
         </div>
         <div>
-
           <label for="trials">Trials:</label>
           <input type="number" id="trials" name="trials" required><br>
         </div>
@@ -29,7 +28,10 @@ get_header(); ?>
           <input type="number" id="mqls" name="mqls" required><br>
         </div>
       </div>
-
+      <div>
+        <label for="totalWeeks">Total de semanas no mês:</label>
+        <input type="number" id="totalWeeks" name="totalWeeks" required><br>
+      </div>
       <button type="submit">Gerar Relatório</button>
     </form>
 
@@ -37,6 +39,7 @@ get_header(); ?>
   </section>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/metricas.js"></script>
 </main>
+
 
 <!-- Para pegar o Footer -->
 <?php get_footer(); ?>

@@ -7,24 +7,18 @@ document.getElementById("metricsForm").addEventListener("submit", function(event
   var leads = document.getElementById("leads").value;
   var mqls = document.getElementById("mqls").value;
 
-  // Calcular a proporção das métricas em relação à semana atual
+  // Calcular a proporção das métricas em relação ao mês atual
   var week = 1; // Defina aqui o número da semana atual
-  var totalWeeks = 4; // Total de semanas no mês
+  var totalWeeks = document.getElementById("totalWeeks").value; // Total de semanas no mês
   var ratio = week + "/" + totalWeeks;
 
-  // Calcular os valores parciais
-  var opportunitiesPartial = opportunities + " | " + ratio + " - " + week + "/" + totalWeeks + " | Até o momento: " + opportunities;
-  var trialsPartial = trials + " | " + ratio + " - " + week + "/" + totalWeeks + " | Até o momento: " + trials;
-  var leadsPartial = leads + " | " + ratio + " - " + week + "/" + totalWeeks + " | Até o momento: " + leads;
-  var mqlsPartial = mqls + " | " + ratio + " - " + week + "/" + totalWeeks + " | Até o momento: " + mqls;
-
   // Gerar o texto do relatório
-  var reportText = "Boa tarde galera! Encerramos a [PRIMEIRA] semana do mês de [MÊS]. Levando isso em conta, o resultado parcial deve ser de " + ratio + ".\n\n";
+  var reportText = "Boa tarde galera! Encerramos a primeira semana do mês de Julho.\n\n";
   reportText += "Resultados até o momento:\n\n";
-  reportText += "Oportunidades - " + opportunitiesPartial + "\n";
-  reportText += "Trials - " + trialsPartial + "\n";
-  reportText += "Leads - " + leadsPartial + "\n";
-  reportText += "MQL's - " + mqlsPartial + "\n";
+  reportText += "Oportunidades - " + opportunities + " | " + ratio + " - " + Math.round(opportunities / totalWeeks) + " | Até o momento: " + opportunities + "\n";
+  reportText += "Trials - " + trials + " | " + ratio + " - " + Math.round(trials / totalWeeks) + " | Até o momento: " + trials + "\n";
+  reportText += "Leads - " + leads + " | " + ratio + " - " + Math.round(leads / totalWeeks) + " | Até o momento: " + leads + "\n";
+  reportText += "MQL's - " + mqls + " | " + ratio + " - " + Math.round(mqls / totalWeeks) + " | Até o momento: " + mqls + "\n";
 
   // Exibir o relatório gerado
   var reportElement = document.getElementById("report");
